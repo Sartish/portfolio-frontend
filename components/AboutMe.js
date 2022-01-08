@@ -1,41 +1,50 @@
-import TextTransition, { presets } from "react-text-transition";
-import React from 'react';
+import React from "react";
+import triangle from "../assets/github.gif";
+import Image from "next/image";
+import styled from "styled-components";
 
-const Header = () => {
-	const TEXTS = [
-		"Forest",
-		"Building",
-		"Tree",
-		"Color"
-	];
+const AboutMe = () => {
+  return (
+    <Container>
+      <Header>About me</Header>
+      <Wrapper>
+        <Text>
+          Hello👋 I am a frontend developer with a interest in both design and
+          content creation. I aim to combine my code skills & passion for
+          meaningful product & service ideas. To create user-friendly digital
+          platforms that are innovative and creative.
+        </Text>
+        <ImageContainer></ImageContainer>
+      </Wrapper>
+    </Container>
+  );
+};
 
-	const [index, setIndex] = React.useState(0);
+export default AboutMe;
 
-	React.useEffect(() => {
-		const intervalId = setInterval(() =>
-			setIndex(index => index + 1),
-			1000 // every 3 seconds
-		);
-		return () => clearTimeout(intervalId);
-	}, []);
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black solid 2px;
+  flex-direction: column;
+`;
+const Header = styled.h1`
+  width: 500px;
+  border: black solid 2px;
+`;
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border: black solid 2px;
+`;
 
+const Text = styled.div`
+  color: red;
+`;
 
-	return (
-		<div className="header-container">
-			<div className="header">
-				<TextTransition
-					text={TEXTS[index % TEXTS.length]}
-					springConfig={presets.wobbly}
-				/>
-				<h1>Hi, my name is</h1>
-				<h2>Sara Carlstein.</h2>
-				<h3>I like building things for the web.</h3>
-				<p>I am a career changer, that has a background in economic and politics & now turned into a developer.</p>
-				<div>social media icon</div>
-				<div className="button">See my work</div>
-			</div>
-		</div>
-	)
-}
-
-export default Header
+const ImageContainer = styled.div`
+  border: 2px solid red;
+`;

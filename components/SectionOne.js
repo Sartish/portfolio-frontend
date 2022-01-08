@@ -1,10 +1,11 @@
-import { SubHeading } from './SubHeading'
-
+import AboutMe from "../components/AboutMe";
 
 const SectionOne = () => {
-	return (
-		<SubHeading>About measdadadaad</SubHeading>
-	)
-}
+  return (
+    <>
+      <AboutMe />
+    </>
+  );
+};
 
-export default SectionOne
+export default SectionOne;
