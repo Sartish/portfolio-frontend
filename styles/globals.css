@@ -6,8 +6,10 @@ body {
 }
 
 .project-image {
-	width: 500px;
-	height: 500px;
+	border: 2px solid black;
+	padding: 0;
+	margin: 0; 
+	width: 400px;
 }
 
 
@@ -58,4 +60,11 @@ body {
   .svg-wrapper:hover .shape {
 	-webkit-animation: 0.5s draw linear forwards;
 	animation: 0.5s draw linear forwards;
+  }
+
+
+  .container-projects {
+	  display: flex; 
+	  justify-content: center;
+	  align-items: center;
   }
