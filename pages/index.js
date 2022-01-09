@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import SectionOne from "../components/SectionOne";
 import Head from "next/head";
+import SectionTwo from "../components/SectionTwo";
 
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/Globalstyles";
@@ -35,6 +36,7 @@ const Home = ({ projects }) => {
         <button onClick={themeToggler}>Switch Theme</button>
         <Header />
         <SectionOne />
+        <SectionTwo />
         <div className={styles.container}>
           {projects.map((project) => {
             return (
