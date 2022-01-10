@@ -1,23 +1,21 @@
 import React from "react";
-import triangle from "../assets/github.gif";
-import Image from "next/image";
 import styled from "styled-components";
 
 const AboutMe = () => {
-  return (
-    <Container>
-      <Header>About me</Header>
-      <Wrapper>
-        <Text>
-          Hello👋 I am a frontend developer with a interest in both design and
-          content creation. I aim to combine my code skills & passion for
-          meaningful product & service ideas. To create user-friendly digital
-          platforms that are innovative and creative.
-        </Text>
-        <ImageContainer></ImageContainer>
-      </Wrapper>
-    </Container>
-  );
+	return (
+		<Container>
+			<Header>About me</Header>
+			<Wrapper>
+				<Text>
+					Hello👋 I am a frontend developer with a interest in both design and
+					content creation. I aim to combine my code skills & passion for
+					meaningful product & service ideas. To create user-friendly digital
+					platforms that are innovative and creative.
+				</Text>
+				<ImageContainer></ImageContainer>
+			</Wrapper>
+		</Container>
+	);
 };
 
 export default AboutMe;
