@@ -1,18 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image"
+import me from "../assets/me.svg"
 
 const AboutMe = () => {
 	return (
 		<Container>
-			<Header>About me</Header>
+			<HeaderWrapper><Border></Border>About me<HeaderText></HeaderText></HeaderWrapper>
 			<Wrapper>
 				<Text>
-					Hello👋 I am a frontend developer with a interest in both design and
+					Hello there my friend! I am a frontend developer with a interest in both design and
 					content creation. I aim to combine my code skills & passion for
 					meaningful product & service ideas. To create user-friendly digital
 					platforms that are innovative and creative.
 				</Text>
-				<ImageContainer></ImageContainer>
+				<ImageContainer><Image src={me}></Image></ImageContainer>
 			</Wrapper>
 		</Container>
 	);
@@ -21,28 +23,45 @@ const AboutMe = () => {
 export default AboutMe;
 
 const Container = styled.div`
+	@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
   display: flex;
   justify-content: center;
   align-items: center;
-  border: black solid 2px;
   flex-direction: column;
+	font-family: 'Rubik', sans-serif;
 `;
-const Header = styled.h1`
+const HeaderWrapper = styled.div`
   width: 500px;
-  border: black solid 2px;
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
 `;
+const HeaderText = styled.h1`
+width: 200px;
+`;
+
+const Border = styled.hr`
+  border: 1px solid black;
+	width: 200px;
+	height: 0.5px;
+	background-color: black; 
+`;
+
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  border: black solid 2px;
+  width: 600px;
+	padding: 20px;
+
 `;
 
 const Text = styled.div`
-  color: red;
+  letter-spacing: 2px;
+  line-height: 20px;
+	font-size: 12px;
 `;
 
 const ImageContainer = styled.div`
-  border: 2px solid red;
+	width: 700px;
 `;
