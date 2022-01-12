@@ -92,6 +92,9 @@ const Home = ({ projects }) => {
 												<div>{project.tech[3]}</div>
 												<div>{project.tech[4]}</div>
 												<div>{project.tech[5]}</div>
+												<div>{project.tech[6]}</div>
+												<div>{project.tech[7]}</div>
+												<div>{project.tech[8]}</div>
 
 											</div>
 										</div>
@@ -109,13 +112,21 @@ const Home = ({ projects }) => {
 										</a>
 										<div className="project-info-mobile">
 											<div className="project-title">{project.title}</div>
-											<p className="project-text">{project.text}</p>
+											<p className="project-text">{project.text}
+												<div className="social-media-desktop">
+													<a className="link-github" href={project.linkcode}><Image className="github-icon" src={github} /></a>
+													<a className="link-new-link" href={project.linkcode}><Image className="new-link-icon" src={newtab} /></a>
+												</div>
+											</p>
 											<div className="tech-attributes">
 												<div>{project.tech[1]}</div>
 												<div>{project.tech[2]}</div>
 												<div>{project.tech[3]}</div>
 												<div>{project.tech[4]}</div>
 												<div>{project.tech[5]}</div>
+												<div>{project.tech[6]}</div>
+												<div>{project.tech[7]}</div>
+												<div>{project.tech[8]}</div>
 											</div>
 											<div>{project.linkcode}</div>
 										</div>
