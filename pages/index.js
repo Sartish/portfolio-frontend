@@ -66,6 +66,9 @@ const Home = ({ projects }) => {
 													<div>{project.tech[3]}</div>
 													<div>{project.tech[4]}</div>
 													<div>{project.tech[5]}</div>
+													<div>{project.tech[6]}</div>
+													<div>{project.tech[7]}</div>
+													<div>{project.tech[8]}</div>
 												</div>
 
 
