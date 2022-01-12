@@ -16,7 +16,7 @@ const Home = ({ projects }) => {
 
 	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 	const isDesktopOrLaptop = useMediaQuery({
-		query: "(min-width: 1224px)",
+		query: "(min-width:  1024px)",
 	});
 
 	<Head>
