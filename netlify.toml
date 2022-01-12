@@ -1,2 +1,6 @@
 [build]
 base="/"
+[build]
+  base = "/"
+  publish = "build/"
+  command = "CI= npm run build"
