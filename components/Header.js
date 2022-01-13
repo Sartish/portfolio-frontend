@@ -18,9 +18,9 @@ const Header = () => {
 		Aos.init({ duration: 3000 });
 	}, []);
 
-	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1023px)' })
 	const isDesktopOrLaptop = useMediaQuery({
-		query: "(min-width: 1224px)",
+		query: "(min-width:  1024px)",
 	});
 
 
@@ -93,7 +93,7 @@ const HeaderWrapperMobile = styled.div`
 	font-family: 'Rubik', sans-serif;
 	justify-content: center;
 	align-items: center;
-	max-width: 600px;
+	width: 600px;
 	flex-direction: column; 
 `
 const FirstHeaderMobile = styled.h1`
