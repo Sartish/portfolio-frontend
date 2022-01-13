@@ -41,7 +41,7 @@ const Home = ({ projects }) => {
 								<div className="project-container-desktop">
 									<section className={isDesktopOrLaptop ? "project-section-desktop" : "project-section-mobile"}>
 										<a href={project.linkproject} className={project.id % 2 === 0 ? 'project-info-left-first-section' : 'project-info-right-first-section'} >
-											<img className="project-image" src={urlFor(project.image)} />
+											<img className="project-image-desktop" src={urlFor(project.image)} />
 										</a>
 										<div className={project.id % 2 === 0 ? 'project-info-right-first-section' : 'project-info-left-first-section'}>
 											<div className="project-title">{project.title}</div>
@@ -66,7 +66,7 @@ const Home = ({ projects }) => {
 
 
 										<a href={project.linkproject} className={project.id % 2 === 0 ? 'project-info-left-second-section' : 'project-info-right-second-section'}>
-											<img className="project-image" src={urlFor(project.image)} />
+											<img className="project-image-desktop" src={urlFor(project.image)} />
 										</a>
 										<div className={project.id % 2 === 0 ? 'project-info-right-second-section' : 'project-info-left-second-section'}>
 											<div className="project-title">{project.title}</div>
@@ -115,7 +115,7 @@ const Home = ({ projects }) => {
 							<div key={project._id}>
 								<div className="project-container-mobile">
 									<section className={"project-section-mobile"}>
-										<a href={project.linkproject} className="project-image" >
+										<a href={project.linkproject} >
 											<img className="project-image-mobile" src={urlFor(project.image)} />
 										</a>
 										<div className="project-info-mobile">
