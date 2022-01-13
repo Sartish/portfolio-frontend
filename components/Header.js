@@ -25,7 +25,7 @@ const Header = () => {
 
 
 	return (
-		<HeaderContainer>
+		<>
 			{isDesktopOrLaptop &&
 				<HeaderWrapperDesktop>
 					<FirstHeaderDesktop>
@@ -75,7 +75,7 @@ const Header = () => {
 					</div>
 				</HeaderWrapperMobile>
 			}
-		</HeaderContainer>
+		</>
 	);
 };
 
@@ -84,28 +84,17 @@ export default Header;
 
 
 
-/*DEFAULT*/
-
-const HeaderContainer = styled.div`
-	@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-  display: flex;
-  height: 800px;
-	font-family: 'Rubik', sans-serif;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	flex-direction: column; 
-`;
-
-
 /*MOBILE STYLING GOES HERE*/
 
 const HeaderWrapperMobile = styled.div`
+	@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
   display: flex;
-  flex-direction: column;
-  margin: 0;
-  border: 2px solid black;
+  height: 700px;
 	font-family: 'Rubik', sans-serif;
+	justify-content: center;
+	align-items: center;
+	max-width: 600px;
+	flex-direction: column; 
 `
 const FirstHeaderMobile = styled.h1`
   margin: 0;
@@ -147,6 +136,7 @@ const ParagraphMobile = styled.p`
 /*Desktop Styling*/
 
 const HeaderWrapperDesktop = styled.div`
+	@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
   margin: 0;
   border: 2px solid black;
 	font-family: 'Rubik', sans-serif;
@@ -154,7 +144,8 @@ const HeaderWrapperDesktop = styled.div`
 	justify-content: center;
 	align-items: center; 
 	flex-direction: column; 
-	width: 500px;
+	width: 100%;
+	height: 700px;
 `;
 
 

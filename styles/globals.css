@@ -11,15 +11,6 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-.page-container-mobile {
-	display: flex; 
-	justify-content:center;
-	align-items: center;
-	flex-direction: column;
-	width: 100vh; 
-	margin: 0;
-}
-
 
 a {
     text-decoration: none;
@@ -190,14 +181,24 @@ width: 100%;
 
 
 /* MOBILE DEVISE STYLING GOES HERE */
+
+.page-container-mobile {
+	display: flex; 
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vh; 
+	margin: 0;
+}
+
 .project-container-mobile{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 5px solid blue;
-	width: 500px;
-
+	padding: 20px;
 }
+
 .project-section-mobile{
 	display: flex;  
 	flex-direction: column; 

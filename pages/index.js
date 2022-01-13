@@ -38,7 +38,6 @@ const Home = ({ projects }) => {
 					{projects.map((project) => {
 						return (
 							<div key={project._id}>
-
 								<div className="project-container-desktop">
 									<section className={isDesktopOrLaptop ? "project-section-desktop" : "project-section-mobile"}>
 										<a href={project.linkproject} className={project.id % 2 === 0 ? 'project-info-left-first-section' : 'project-info-right-first-section'} >
@@ -86,10 +85,8 @@ const Home = ({ projects }) => {
 												<div>{project.tech[6]}</div>
 												<div>{project.tech[7]}</div>
 												<div>{project.tech[8]}</div>
-
 											</div>
 										</div>
-
 									</section>
 								</div>
 							</div>
