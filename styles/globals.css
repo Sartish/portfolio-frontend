@@ -34,13 +34,6 @@ p {
 }
 
 
-.project-container-mobile {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-width: 100%;
-}
 
 .project-container-desktop {
 display: flex;
@@ -104,7 +97,6 @@ width: 100%;
 	padding: 0;
 	margin: 0; 
 	cursor: pointer;
-	width: 500px;
 }
 .project-title{
 	color: black;
@@ -191,12 +183,12 @@ width: 100%;
 	margin: 0;
 }
 
-.project-container-mobile{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 5px solid blue;
-	padding: 20px;
+.project-container-mobile {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
 }
 
 .project-section-mobile{
@@ -208,7 +200,7 @@ width: 100%;
 }
 
 .project-image-mobile{
-	width: 400px;
+	width: 600px;
 }
 
 
