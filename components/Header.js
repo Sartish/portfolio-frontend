@@ -25,7 +25,6 @@ const Header = () => {
 
 
 	return (
-
 		<HeaderContainer>
 			{isDesktopOrLaptop &&
 				<HeaderWrapperDesktop>
@@ -94,6 +93,8 @@ const HeaderContainer = styled.div`
 	font-family: 'Rubik', sans-serif;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	flex-direction: column; 
 `;
 
 
@@ -144,6 +145,19 @@ const ParagraphMobile = styled.p`
 
 
 /*Desktop Styling*/
+
+const HeaderWrapperDesktop = styled.div`
+  margin: 0;
+  border: 2px solid black;
+	font-family: 'Rubik', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-direction: column; 
+	width: 500px;
+`;
+
+
 const FirstHeaderDesktop = styled.h1`
   margin: 0;
   font-size: 18px;
@@ -151,9 +165,6 @@ const FirstHeaderDesktop = styled.h1`
   letter-spacing: 4px;
   line-height: 20px;
   margin-bottom: 5px;
-	position: absolute; 
-	top: 10%;
-	left: 10%;
 `;
 
 const SecondHeaderDesktop = styled.h2`
@@ -164,9 +175,6 @@ const SecondHeaderDesktop = styled.h2`
   letter-spacing: 4px;
   line-height: 70px;
   margin-bottom: 5px;
-	position: absolute;
-	top: 25%;
-	left: 15%;
 `;
 
 const ThirdHeaderDesktop = styled.h3`
@@ -175,9 +183,6 @@ const ThirdHeaderDesktop = styled.h3`
   letter-spacing: 4px;
   line-height: 50px;
 	font-family: 'Rubik', sans-serif;
-	position: absolute;
-	top: 40%;
-	left: 15%;
 `;
 
 const ParagraphDesktop = styled.p`
@@ -186,23 +191,16 @@ const ParagraphDesktop = styled.p`
   letter-spacing: 4px;
   line-height: 20px;
   margin-bottom: 5px;
-	position: absolute;
-	top: 50%;
-	left: 15%;
 `;
 
 const ButtonDesktop = styled.p`
 	position: absolute;
-	 top: 55%;
+	top: 55%;
   left: calc(50% - 90px);
 `;
 
 
-const HeaderWrapperDesktop = styled.div`
-  margin: 0;
-  border: 2px solid black;
-	font-family: 'Rubik', sans-serif;
-`;
+
 
 /* const TopMeadiaLinks = styled.div`
 	width: 40px;

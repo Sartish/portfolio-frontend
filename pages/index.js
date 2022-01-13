@@ -28,17 +28,17 @@ const Home = ({ projects }) => {
 
 	return (
 		<>
-			<section className="page-container">
+			{isDesktopOrLaptop &&
+				<section className="page-container">
+					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
+					{/* 					<GlobalStyles /> */}
+					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
+					<Header />
+					<SectionOne />
+					{projects.map((project) => {
+						return (
+							<div key={project._id}>
 
-				{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
-				{/* 					<GlobalStyles /> */}
-				<button onClick={themeToggler}>Switch Theme</button>
-				<Header />
-				<SectionOne />
-				{projects.map((project) => {
-					return (
-						<div key={project._id}>
-							{isDesktopOrLaptop &&
 								<div className="project-container-desktop">
 									<section className={isDesktopOrLaptop ? "project-section-desktop" : "project-section-mobile"}>
 										<a href={project.linkproject} className={project.id % 2 === 0 ? 'project-info-left-first-section' : 'project-info-right-first-section'} >
@@ -63,8 +63,6 @@ const Home = ({ projects }) => {
 												<div>{project.tech[7]}</div>
 												<div>{project.tech[8]}</div>
 											</div>
-
-
 										</div>
 
 
@@ -94,10 +92,30 @@ const Home = ({ projects }) => {
 
 									</section>
 								</div>
-							}
+							</div>
+						)
+					})
+					}
+					{/* 				</ThemeProvider> */}
+				</section>
+			}
 
 
-							{isTabletOrMobile &&
+
+
+
+
+
+			{isTabletOrMobile &&
+				<section className="page-container-mobile">
+					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
+					{/* 					<GlobalStyles /> */}
+					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
+					<Header />
+					<SectionOne />
+					{projects.map((project) => {
+						return (
+							<div key={project._id}>
 								<div className="project-container-mobile">
 									<section className={"project-section-mobile"}>
 										<a href={project.linkproject} className="project-image" >
@@ -126,13 +144,14 @@ const Home = ({ projects }) => {
 									</section>
 								</div>
 
-							}
-						</div>
-					)
-				})
-				}
-				{/* 				</ThemeProvider> */}
-			</section>
+							</div>
+						)
+					})
+					}
+					{/* 				</ThemeProvider> */}
+				</section >
+			}
+
 		</>
 	)
 }
