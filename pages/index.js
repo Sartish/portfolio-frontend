@@ -2,7 +2,6 @@ import { sanityClient, urlFor } from "../sanity"
 import React, { useState } from "react"
 import Header from '../components/Header'
 import SectionOne from '../components/SectionOne'
-import Head from 'next/head'
 import Image from "next/image";
 
 /* import { ThemeProvider } from "styled-components";
@@ -14,18 +13,12 @@ import newtab from '../assets/newtab.svg'
 
 const Home = ({ projects }) => {
 
-	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1023px)' })
 	const isDesktopOrLaptop = useMediaQuery({
 		query: "(min-width:  1024px)",
 	});
 
-	<Head>
-		<title>My page title</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-			rel="stylesheet"
-		/>
-	</Head>
+
 	console.log(projects)
 
 	const [theme, setTheme] = useState('light');
@@ -35,7 +28,7 @@ const Home = ({ projects }) => {
 
 	return (
 		<>
-			<section className={isDesktopOrLaptop ? "project-container-desktop" : "project-container-mobile"}>
+			<section className="page-container">
 
 				{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
 				{/* 					<GlobalStyles /> */}

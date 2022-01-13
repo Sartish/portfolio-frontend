@@ -92,7 +92,6 @@ const HeaderContainer = styled.div`
   display: flex;
   height: 800px;
 	font-family: 'Rubik', sans-serif;
-	width: 100%;
 	justify-content: center;
 	align-items: center;
 `;
