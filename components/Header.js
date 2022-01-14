@@ -28,6 +28,7 @@ const Header = () => {
 		<>
 			{isDesktopOrLaptop &&
 				<HeaderWrapperDesktop>
+					<StickySocialBar>hej</StickySocialBar>
 					<FirstHeaderDesktop>
 						<span data-aos="fade-left">Hi </span>{" "}
 						<span data-aos="fade-left">my name is</span>
@@ -48,6 +49,7 @@ const Header = () => {
 							<div className="text">See my work</div>
 						</div>
 					</ButtonDesktop>
+
 				</HeaderWrapperDesktop>
 
 			}
@@ -55,24 +57,26 @@ const Header = () => {
 
 			{isTabletOrMobile &&
 				<HeaderWrapperMobile>
-					<FirstHeaderMobile>
-						<span data-aos="fade-left">Hi </span>{" "}
-						<span data-aos="fade-left">my name is</span>
-					</FirstHeaderMobile>
-					<SecondHeaderMobile data-aos="fade-up">Sara Carlstein.</SecondHeaderMobile>
-					<ThirdHeaderMobile data-aos="fade-up">
-						I like building things for the web.
-					</ThirdHeaderMobile>
-					<ParagraphMobile data-aos="fade-left">
-						I am a career changer, that has a background in economic and politics
-						& now turned into a developer.
-					</ParagraphMobile>
-					<div className="svg-wrapper">
-						<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-							<rect className="shape" height="60" width="320" />
-						</svg>
-						<div className="text">See my work</div>
-					</div>
+					<WrapperAllHeaders>
+						<FirstHeaderMobile>
+							<span data-aos="fade-left">Hi </span>{" "}
+							<span data-aos="fade-left">my name is</span>
+						</FirstHeaderMobile>
+						<SecondHeaderMobile data-aos="fade-up">Sara Carlstein.</SecondHeaderMobile>
+						<ThirdHeaderMobile data-aos="fade-up">
+							I like building things for the web.
+						</ThirdHeaderMobile>
+						<ParagraphMobile data-aos="fade-left">
+							I am a career changer, that has a background in economic and politics
+							& now turned into a developer.
+						</ParagraphMobile>
+						<div className="svg-wrapper">
+							<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+								<rect className="shape" height="60" width="320" />
+							</svg>
+							<div className="text">See my work</div>
+						</div>
+					</WrapperAllHeaders>
 				</HeaderWrapperMobile>
 			}
 		</>
@@ -93,8 +97,16 @@ const HeaderWrapperMobile = styled.div`
 	font-family: 'Rubik', sans-serif;
 	justify-content: center;
 	align-items: center;
-	width: 600px;
+	width: 100%;
 	flex-direction: column; 
+	background-color: #FDF5DF;
+	background-size: cover; 
+	background-position: top; 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+`
+
+const WrapperAllHeaders = styled.div`
+	width: 700px;
 `
 const FirstHeaderMobile = styled.h1`
   margin: 0;
@@ -102,13 +114,13 @@ const FirstHeaderMobile = styled.h1`
   font-family: 'Rubik', sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 	display: flex;
 `;
 
 const SecondHeaderMobile = styled.h2`
   margin: 0;
-  font-size: 100px;
+  font-size: 80px;
   text-align: left;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 4px;
@@ -122,6 +134,7 @@ const ThirdHeaderMobile = styled.h3`
   letter-spacing: 4px;
   line-height: 50px;
 	font-family: 'Rubik', sans-serif;
+	margin-bottom: 10px;
 `;
 
 const ParagraphMobile = styled.p`
@@ -138,14 +151,17 @@ const ParagraphMobile = styled.p`
 const HeaderWrapperDesktop = styled.div`
 	@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
   margin: 0;
-  border: 2px solid black;
 	font-family: 'Rubik', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center; 
 	flex-direction: column; 
 	width: 100%;
-	height: 700px;
+	height: 600px;
+	background-color: #FDF5DF;
+	background-size: cover; 
+	background-position: top; 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
 `;
 
 
@@ -156,16 +172,22 @@ const FirstHeaderDesktop = styled.h1`
   letter-spacing: 4px;
   line-height: 20px;
   margin-bottom: 5px;
+	position: absolute; 
+	top: 10%;
+	left: 10%;
 `;
 
 const SecondHeaderDesktop = styled.h2`
   margin: 0;
-  font-size: 100px;
+  font-size: 80px;
   text-align: left;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 4px;
   line-height: 70px;
   margin-bottom: 5px;
+	position: absolute; 
+	top: 20%;
+	left: 10%;
 `;
 
 const ThirdHeaderDesktop = styled.h3`
@@ -174,20 +196,32 @@ const ThirdHeaderDesktop = styled.h3`
   letter-spacing: 4px;
   line-height: 50px;
 	font-family: 'Rubik', sans-serif;
+	position: absolute; 
+	top: 30%;
+	left: 10%;
 `;
 
 const ParagraphDesktop = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
   margin-bottom: 5px;
+	position: absolute; 
+	top: 39%;
+	left: 10%;
 `;
 
 const ButtonDesktop = styled.p`
 	position: absolute;
-	top: 55%;
+	top: 45%;
   left: calc(50% - 90px);
+`;
+
+const StickySocialBar = styled.p`
+	position: fixed;
+  top: 0px;
+	z-index: 9;
 `;
 
 

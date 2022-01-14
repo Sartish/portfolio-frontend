@@ -31,7 +31,7 @@ const Container = styled.div`
 	font-family: 'Rubik', sans-serif;
 `;
 const HeaderWrapper = styled.div`
-  width: 500px;
+  width: 600px;
 	display: flex; 
 	justify-content: center; 
 	align-items: center; 
@@ -65,3 +65,6 @@ const Text = styled.div`
 const ImageContainer = styled.div`
 	width: 700px;
 `;
+
+
+
