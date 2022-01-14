@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import Header from '../components/Header'
 import SectionOne from '../components/SectionOne'
 import Image from "next/image";
+import StickyBar from '../components/StickyBar'
 
 /* import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/Globalstyles";
@@ -34,6 +35,7 @@ const Home = ({ projects }) => {
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<Header />
+					<StickyBar />
 					<SectionOne />
 					{projects.map((project) => {
 						return (

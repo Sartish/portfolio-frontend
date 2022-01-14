@@ -28,7 +28,6 @@ const Header = () => {
 		<>
 			{isDesktopOrLaptop &&
 				<HeaderWrapperDesktop>
-					<StickySocialBar>hej</StickySocialBar>
 					<FirstHeaderDesktop>
 						<span data-aos="fade-left">Hi </span>{" "}
 						<span data-aos="fade-left">my name is</span>
@@ -166,25 +165,22 @@ const HeaderWrapperDesktop = styled.div`
 
 
 const FirstHeaderDesktop = styled.h1`
-  margin: 0;
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 	position: absolute; 
 	top: 10%;
 	left: 10%;
 `;
 
 const SecondHeaderDesktop = styled.h2`
-  margin: 0;
   font-size: 80px;
   text-align: left;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 4px;
   line-height: 70px;
-  margin-bottom: 5px;
 	position: absolute; 
 	top: 20%;
 	left: 10%;
@@ -197,7 +193,7 @@ const ThirdHeaderDesktop = styled.h3`
   line-height: 50px;
 	font-family: 'Rubik', sans-serif;
 	position: absolute; 
-	top: 30%;
+	top: 35%;
 	left: 10%;
 `;
 
@@ -208,33 +204,15 @@ const ParagraphDesktop = styled.p`
   line-height: 20px;
   margin-bottom: 5px;
 	position: absolute; 
-	top: 39%;
+	top: 50%;
 	left: 10%;
 `;
 
 const ButtonDesktop = styled.p`
 	position: absolute;
-	top: 45%;
+	top: 55%;
   left: calc(50% - 90px);
 `;
 
-const StickySocialBar = styled.p`
-	position: fixed;
-  top: 0px;
-	z-index: 9;
-`;
-
-
-
-
-/* const TopMeadiaLinks = styled.div`
-	width: 40px;
-	height: 40px;
-	padding: 15px;
-	justify-self: flex-start;
-	position: absolute;
-	top: 40%;
-	left: 2%;
-`; */
 
 
