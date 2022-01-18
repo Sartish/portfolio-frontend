@@ -7,6 +7,9 @@ import Skills from "../components/Skills";
 import Image from "next/image";
 import StickyBar from "../components/StickyBar";
 import Head from 'next/head'
+import WritingCard from "../components/WritingCard";
+
+
 
 
 /* import { ThemeProvider } from "styled-components";
@@ -151,6 +154,7 @@ const Home = ({ projects }) => {
 						);
 					})}
 					{/* 				</ThemeProvider> */}
+					<WritingCard />
 				</section>
 			)}
 
@@ -203,6 +207,7 @@ const Home = ({ projects }) => {
 						);
 					})}
 					{/* 				</ThemeProvider> */}
+					<WritingCard />
 				</section>
 			)}
 		</>

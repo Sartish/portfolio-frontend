@@ -214,3 +214,7 @@ i{
 	color: black;
 	font-size: 40px;
 }
+
+.tailwind {
+	width: 200px;
+}

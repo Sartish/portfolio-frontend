@@ -11,66 +11,60 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' */
 
 const Header = () => {
-  useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
+	useEffect(() => {
+		Aos.init({ duration: 3000 });
+	}, []);
 
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width:  1024px)",
-  });
+	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
+	const isDesktopOrLaptop = useMediaQuery({
+		query: "(min-width:  1024px)",
+	});
 
-  return (
-    <>
-      {isDesktopOrLaptop && (
-        <HeaderWrapperDesktop>
-          <FirstHeaderDesktop>
-            <span data-aos="fade-left">Hi </span>{" "}
-            <span data-aos="fade-left">my name is</span>
-          </FirstHeaderDesktop>
-          <SecondHeaderDesktop data-aos="fade-up">
-            Sara Carlstein.
-          </SecondHeaderDesktop>
-          <ThirdHeaderDesktop data-aos="fade-up">
-            I like building things for the web.
-          </ThirdHeaderDesktop>
-          {/* <ParagraphDesktop data-aos="fade-left">
+	return (
+		<>
+			{isDesktopOrLaptop && (
+				<HeaderWrapperDesktop>
+					<FirstHeaderDesktop>
+						<span data-aos="fade-left">Hi </span>{" "}
+						<span data-aos="fade-left">my name is</span>
+					</FirstHeaderDesktop>
+					<SecondHeaderDesktop data-aos="fade-up">
+						Sara Carlstein.
+					</SecondHeaderDesktop>
+					<ThirdHeaderDesktop data-aos="fade-up">
+						I like building things for the web.
+					</ThirdHeaderDesktop>
+					{/* <ParagraphDesktop data-aos="fade-left">
 						I am a career changer, that has a background in economic and politics
 						& now turned into a developer.
 					</ParagraphDesktop> */}
 
-          <Button>See my work </Button>
-        </HeaderWrapperDesktop>
-      )}
+					<Button>See my work </Button>
+				</HeaderWrapperDesktop>
+			)}
 
-      {isTabletOrMobile && (
-        <HeaderWrapperMobile>
-          <WrapperAllHeaders>
-            <FirstHeaderMobile>
-              <span data-aos="fade-left">Hi </span>{" "}
-              <span data-aos="fade-left">my name is</span>
-            </FirstHeaderMobile>
-            <SecondHeaderMobile data-aos="fade-up">
-              Sara Carlstein.
-            </SecondHeaderMobile>
-            <ThirdHeaderMobile data-aos="fade-up">
-              I like building things for the web.
-            </ThirdHeaderMobile>
-            <ParagraphMobile data-aos="fade-left">
-              I am a career changer, that has a background in economic and
-              politics & now turned into a developer.
-            </ParagraphMobile>
-            <div className="svg-wrapper">
-              <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                <rect className="shape" height="60" width="320" />
-              </svg>
-              <div className="text">See my work</div>
-            </div>
-          </WrapperAllHeaders>
-        </HeaderWrapperMobile>
-      )}
-    </>
-  );
+			{isTabletOrMobile && (
+				<HeaderWrapperMobile>
+					<WrapperAllHeaders>
+						<FirstHeaderMobile>
+							<span data-aos="fade-left">Hi my name is</span>
+						</FirstHeaderMobile>
+						<SecondHeaderMobile data-aos="fade-up">
+							Sara Carlstein.
+						</SecondHeaderMobile>
+						<ThirdHeaderMobile data-aos="fade-up">
+							I like building things for the web.
+						</ThirdHeaderMobile>
+						{/* 						<ParagraphMobile data-aos="fade-left">
+							I am a career changer, that has a background in economic and
+							politics & now turned into a developer.
+						</ParagraphMobile> */}
+						<ButtonMobile>See my work </ButtonMobile>
+					</WrapperAllHeaders>
+				</HeaderWrapperMobile>
+			)}
+		</>
+	);
 };
 
 export default Header;
@@ -79,13 +73,14 @@ export default Header;
 
 const HeaderWrapperMobile = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-  display: flex;
-  height: 700px;
+  margin: 0;
   font-family: "Rubik", sans-serif;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
   flex-direction: column;
+  width: 100%;
+  height: 600px;
   background-color: #fdf5df;
   background-size: cover;
   background-position: top;
@@ -93,7 +88,13 @@ const HeaderWrapperMobile = styled.div`
 `;
 
 const WrapperAllHeaders = styled.div`
-  width: 700px;
+ border: black solid 2px;
+ display: flex; 
+ justify-content: center;
+ align-items: flex-start; 
+ flex-direction: column; 
+ max-width: 500px;
+ margin-top: -20px;
 `;
 const FirstHeaderMobile = styled.h1`
   margin: 0;
@@ -107,17 +108,17 @@ const FirstHeaderMobile = styled.h1`
 
 const SecondHeaderMobile = styled.h2`
   margin: 0;
-  font-size: 80px;
+  font-size: 60px;
   text-align: left;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 70px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 `;
 
 const ThirdHeaderMobile = styled.h3`
-  margin: 0;
-  font-size: 50px;
+  margin-bottom: 20px;
+  font-size: 40px;
   letter-spacing: 4px;
   line-height: 50px;
   font-family: "Rubik", sans-serif;
@@ -130,6 +131,23 @@ const ParagraphMobile = styled.p`
   letter-spacing: 4px;
   line-height: 20px;
   margin-bottom: 5px;
+`;
+
+const ButtonMobile = styled.button`
+  left: calc(50% - 200px);
+  background-color: #fdf5df; /* Green */
+  border: 2px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 4px;
+  line-height: 20px;
 `;
 
 /*Desktop Styling*/
