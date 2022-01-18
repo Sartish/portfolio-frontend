@@ -165,9 +165,11 @@ const Home = ({ projects }) => {
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<Header />
 					<SectionOne />
+
 					{projects.map((project) => {
 						return (
 							<div key={project._id}>
+								<h1 className="featured-project-header-mobile">Featured Projects</h1>
 								<div className="project-container-mobile">
 									<section className={"project-section-mobile"}>
 										<a href={project.linkproject}>
