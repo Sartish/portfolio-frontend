@@ -79,8 +79,8 @@ const HeaderWrapperMobile = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   height: 600px;
+	width: 100%;
   background-color: #fdf5df;
   background-size: cover;
   background-position: top;

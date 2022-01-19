@@ -1,21 +1,25 @@
 import { sanityClient, urlFor } from "../sanity";
 import React, { useState } from "react";
+import Head from 'next/head'
+import WritingCard from "../components/WritingCard";
+import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
+
 import Header from "../components/Header";
 import AboutMe from "../components/AboutMe";
 import Plant from "../components/Plant";
 import Skills from "../components/Skills";
-import Image from "next/image";
+import NavBar from "../components/NavBar"
 import StickyBar from "../components/StickyBar";
-import Head from 'next/head'
-import WritingCard from "../components/WritingCard";
-
+import github from "../assets/github.svg";
+import newtab from "../assets/newtab.svg";
 
 /* import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/Globalstyles";
 import { lightTheme, darkTheme } from "../components/Themes" */
-import { useMediaQuery } from "react-responsive";
-import github from "../assets/github.svg";
-import newtab from "../assets/newtab.svg";
+
+
+
 
 const Home = ({ projects }) => {
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
@@ -37,6 +41,7 @@ const Home = ({ projects }) => {
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
 			</Head>
+			<NavBar />
 			{isDesktopOrLaptop && (
 				<section className="page-container">
 					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
