@@ -177,6 +177,11 @@ width: 100%;
 
 /* MOBILE DEVISE STYLING GOES HERE */
 
+.featured-project-header-mobile{
+	text-align: center;
+	margin-top: 20px;
+}
+
 .page-container-mobile {
 	display: flex; 
 	justify-content:center;
@@ -217,4 +222,8 @@ i{
 
 .tailwind {
 	width: 200px;
+}
+
+.profile-picture{
+	width: 600px;
 }

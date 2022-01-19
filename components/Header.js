@@ -77,7 +77,7 @@ const HeaderWrapperMobile = styled.div`
   font-family: "Rubik", sans-serif;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   height: 600px;
@@ -88,13 +88,12 @@ const HeaderWrapperMobile = styled.div`
 `;
 
 const WrapperAllHeaders = styled.div`
- border: black solid 2px;
  display: flex; 
  justify-content: center;
  align-items: flex-start; 
  flex-direction: column; 
  max-width: 500px;
- margin-top: -20px;
+ margin-top: -120px;
 `;
 const FirstHeaderMobile = styled.h1`
   margin: 0;
@@ -122,7 +121,7 @@ const ThirdHeaderMobile = styled.h3`
   letter-spacing: 4px;
   line-height: 50px;
   font-family: "Rubik", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
 
 const ParagraphMobile = styled.p`

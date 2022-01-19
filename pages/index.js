@@ -1,15 +1,13 @@
 import { sanityClient, urlFor } from "../sanity";
 import React, { useState } from "react";
 import Header from "../components/Header";
-import SectionOne from "../components/SectionOne";
+import AboutMe from "../components/AboutMe";
 import Plant from "../components/Plant";
 import Skills from "../components/Skills";
 import Image from "next/image";
 import StickyBar from "../components/StickyBar";
 import Head from 'next/head'
 import WritingCard from "../components/WritingCard";
-
-
 
 
 /* import { ThemeProvider } from "styled-components";
@@ -47,7 +45,7 @@ const Home = ({ projects }) => {
 					<Header />
 					<StickyBar />
 					<Plant />
-					<SectionOne />
+					<AboutMe />
 					<Skills />
 					{projects.map((project) => {
 						return (
@@ -164,8 +162,7 @@ const Home = ({ projects }) => {
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<Header />
-					<SectionOne />
-
+					<AboutMe />
 					{projects.map((project) => {
 						return (
 							<div key={project._id}>
