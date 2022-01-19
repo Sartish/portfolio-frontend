@@ -160,7 +160,7 @@ const HeaderWrapperDesktop = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-color: #fdf5df;
   background-size: cover;
   background-position: top;
@@ -174,7 +174,7 @@ const FirstHeaderDesktop = styled.h1`
   line-height: 20px;
   margin-bottom: 15px;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 10%;
 `;
 
@@ -185,7 +185,7 @@ const SecondHeaderDesktop = styled.h2`
   letter-spacing: 4px;
   line-height: 70px;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 10%;
 `;
 
@@ -196,7 +196,7 @@ const ThirdHeaderDesktop = styled.h3`
   line-height: 50px;
   font-family: "Rubik", sans-serif;
   position: absolute;
-  top: 35%;
+  top: 45%;
   left: 10%;
 `;
 
@@ -207,13 +207,13 @@ const ParagraphDesktop = styled.p`
   line-height: 20px;
   margin-bottom: 5px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 10%;
 `;
 
 const Button = styled.button`
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: calc(50% - 200px);
   background-color: #fdf5df; /* Green */
   border: 2px solid black;

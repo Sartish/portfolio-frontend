@@ -24,63 +24,63 @@ const Skills = () => {
 				</HeaderContainer>
 				<IconWrapper>
 					<StyledIcon>
-						<i class="devicon-nextjs-original"></i>
+						<i className="devicon-nextjs-original"></i>
 						<IconText>Nextjs</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-react-original"></i>
+						<i className="devicon-react-original"></i>
 						<IconText>React</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-css3-plain"></i>
+						<i className="devicon-css3-plain"></i>
 						<IconText>CSS3</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-figma-plain"></i>
+						<i className="devicon-figma-plain"></i>
 						<IconText>Figma</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-javascript-plain"></i>
+						<i className="devicon-javascript-plain"></i>
 						<IconText>JavaScript</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-mongodb-plain"></i>
+						<i className="devicon-mongodb-plain"></i>
 						<IconText>Mongodb</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-github-original"></i>
+						<i className="devicon-github-original"></i>
 						<IconText>Github</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-html5-plain"></i>
+						<i className="devicon-html5-plain"></i>
 						<IconText>HTML5</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-git-plain"></i>
+						<i className="devicon-git-plain"></i>
 						<IconText>Git</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-npm-original-wordmark"></i>
+						<i className="devicon-npm-original-wordmark"></i>
 						<IconText>NPM</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-express-original"></i>
+						<i className="devicon-express-original"></i>
 						<IconText>Express</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-nodejs-plain"></i>
+						<i className="devicon-nodejs-plain"></i>
 						<IconText>Nodejs</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-materialui-plain"></i>
+						<i className="devicon-materialui-plain"></i>
 						<IconText>Material UI</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-visualstudio-plain"></i>
+						<i className="devicon-visualstudio-plain"></i>
 						<IconText>Visual Studio</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-sass-original"></i>
+						<i className="devicon-sass-original"></i>
 						<IconText>SASS</IconText>
 					</StyledIcon>
 				</IconWrapper>
