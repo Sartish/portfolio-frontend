@@ -9,7 +9,7 @@ const StickyBar = () => {
 	return (
 		<>
 
-			<aside class="fixed w-full z-10 my-60">
+			<aside className="fixed w-full z-10 my-60">
 				<StickyWrapper>
 					<SocialIconWrapper>
 						<SocialMediaIcon>
