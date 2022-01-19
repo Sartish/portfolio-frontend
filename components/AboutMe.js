@@ -65,15 +65,19 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
+	margin-top: 200px;
+	 border: solid black 2px;
 `;
 const HeaderWrapper = styled.div`
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ width 500px;
+border: solid black 2px;
+text-align: center;
 `;
 const HeaderText = styled.h1`
-  width: 200px;
+	font-size: 35px;
+	letter-spacing: 4px;
+  line-height: 50px;
+	font-family: "Rubik", sans-serif;
 `;
 
 const Border = styled.hr`
@@ -126,6 +130,7 @@ const HeaderWrapperMobile = styled.div`
 const HeaderTextMobile = styled.h1`
   max-width: 200px;
 	text-align: center;
+	 font-size: 28px;
 `;
 
 const BorderMobile = styled.hr`
@@ -139,7 +144,7 @@ const WrapperMobile = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-	flex-direction: row; 
+	flex-direction: column; 
   max-width: 500px;
   padding: 50px;
 `;
@@ -152,7 +157,6 @@ const TextMobile = styled.div`
 `;
 
 const ImageContainerMobile = styled.div`
-width: 600px;
-margin-right: 4px;
+margin-bottom: 10px;
 `;
 

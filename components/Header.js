@@ -51,10 +51,11 @@ const Header = () => {
 						</FirstHeaderMobile>
 						<SecondHeaderMobile data-aos="fade-up">
 							Sara Carlstein.
+							<ThirdHeaderMobile data-aos="fade-up">
+								I like building things for the web.
+							</ThirdHeaderMobile>
 						</SecondHeaderMobile>
-						<ThirdHeaderMobile data-aos="fade-up">
-							I like building things for the web.
-						</ThirdHeaderMobile>
+
 						{/* 						<ParagraphMobile data-aos="fade-left">
 							I am a career changer, that has a background in economic and
 							politics & now turned into a developer.
@@ -79,49 +80,53 @@ const HeaderWrapperMobile = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 600px;
+  height: 800px;
 	width: 100%;
   background-color: #fdf5df;
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 49% 0, 100% 0, 100% 100%, 100% 66%, 0 100%, 0 48%);
+	padding: 50px;
 `;
 
 const WrapperAllHeaders = styled.div`
  display: flex; 
  justify-content: center;
  align-items: flex-start; 
- flex-direction: column; 
- max-width: 500px;
- margin-top: -120px;
-`;
+ flex-direction: column;
+ `;
 const FirstHeaderMobile = styled.h1`
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display: flex;
+	margin-top: -150px;
+	min-width: 300px;
+	border: 2px solid black;
+
 `;
 
 const SecondHeaderMobile = styled.h2`
   margin: 0;
-  font-size: 60px;
-  text-align: left;
+  font-size: 35px;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 70px;
   margin-bottom: 15px;
+	min-width: 300px
 `;
 
 const ThirdHeaderMobile = styled.h3`
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 28px;
   letter-spacing: 4px;
   line-height: 50px;
   font-family: "Rubik", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+	min-width: 300px
 `;
 
 const ParagraphMobile = styled.p`

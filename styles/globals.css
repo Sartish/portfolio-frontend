@@ -12,7 +12,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Rubik', sans-serif;
-	height: 100%;
 }
 
 
@@ -37,7 +36,12 @@ p {
 	padding-right: 20px;
 }
 
-
+.project-header-container{
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	flex-direction: column;
+}
 
 .project-container-desktop {
 display: flex;
@@ -45,58 +49,28 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 width: 100%;
+border: 2px solid black;
 }
 
-/*BUTTON ANIMATION*/
-
-.svg-wrapper {
-	height: 60px;
-	margin: 0 auto;
-	position: relative;
-	transform: translateY(-50%);
-	width: 400px;
-	text-align: center;
-	cursor: pointer;
-	margin-top: 50px;
-  }
-  
-  .shape {
-	fill: transparent;
-	stroke-dasharray: 140 540;
-	stroke-dashoffset: -474;
-	stroke-width: 8px;
-	stroke: #F4C273;
-  }
-  
-  .text {
-	color: black;
-	font-family: 'Rubik', sans-serif;
-	font-size: 22px;
-	letter-spacing: 4px;
-	line-height: 30px;
-	position: relative;
-	top: -48px;
-  }
-  
-  @keyframes draw {
-	0% {
-	  stroke-dasharray: 140 540;
-	  stroke-dashoffset: -474;
-	  stroke-width: 8px;
-	}
-	100% {
-	  stroke-dasharray: 760;
-	  stroke-dashoffset: 0;
-	  stroke-width: 2px;
-	}
-  }
-  
-  .svg-wrapper:hover .shape {
-	-webkit-animation: 0.5s draw linear forwards;
-	animation: 0.5s draw linear forwards;
-  }
 
 	/*DESKTOOP STYLING PROJECTS*/
+.featured-project-header-desktop{
+	width: 500px;
+	border: solid black 2px;
+	text-align: center;
+	font-size: 35px;
+	letter-spacing: 4px;
+  line-height: 50px;
+	font-family: "Rubik", sans-serif;
+}
+
+.featured-project-second-header-desktop {
+	font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 4px;
+  line-height: 20px;
+	padding: 10px;
+}
 
 .project-image-desktop {
 	padding: 0;
@@ -107,13 +81,17 @@ width: 100%;
 .project-title{
 	color: black;
 	font-family: 'Rubik', sans-serif;
-	font-size: 40px;
+	font-size: 28px;
+	border: solid 2px red;
+	text-align: left;
+	width: 100%;
 }
 
 .project-text {
 	letter-spacing: 2px;
   line-height: 28px;
 	font-size: 14px;
+	border: solid 2px red;
 }
 
 .tech-attributes{
@@ -135,13 +113,6 @@ width: 100%;
 	font-weight: bold;
 }
 
-.project-container-desktop{
-	display: flex; 
-	justify-content: center; 
-	align-items: center; 
-	flex-direction: column;
-}
-
 .project-section-desktop{
 	display: flex;  
 	flex-direction: row; 
@@ -157,6 +128,7 @@ width: 100%;
 	flex-direction: column; 
 	margin: 20px;
 	padding: 20px;
+	border: 2px solid black;
 }
 
 .project-info-right-first-section {
@@ -191,7 +163,6 @@ width: 100%;
 	align-items: center;
 	flex-direction: column;
 	margin: 0;
-	width: 100vh;
 }
 
 .project-container-mobile {
@@ -199,7 +170,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-
 }
 
 .project-section-mobile{

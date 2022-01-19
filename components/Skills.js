@@ -93,26 +93,28 @@ export default Skills;
 
 
 const SkillsContainer = styled.div`
-  width: 100%;
   height: 700px;
-  background-color: #fdf5df;
-  overflow: auto;
+ /*  background-color: #fdf5df; */
+  border: solid black 2px;
 	display: flex; 
 	justify-content: center; 
 	flex-direction: column; 
 	align-items: center; 
-clip-path: polygon(23% 16%, 100% 0, 100% 50%, 100% 83%, 0 100%, 0 81%, 0 0);
+/* clip-path: polygon(23% 16%, 100% 0, 100% 50%, 100% 83%, 0 100%, 0 81%, 0 0); */
+
 `;
 const HeaderContainer = styled.div`
- width 700px;
- padding-left: 30px;
+ width 500px;
+  border: solid black 2px;
+	text-align: center;
 `;
 const HeaderOne = styled.h1`
-  font-size: 50px;
+  font-size: 35px;
   letter-spacing: 4px;
   line-height: 50px;
 	font-family: "Rubik", sans-serif;
 	padding: 10px;
+	 border: solid black 2px;
 `;
 const HeaderTwo = styled.h2`
   font-size: 14px;
