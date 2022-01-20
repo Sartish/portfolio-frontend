@@ -66,11 +66,9 @@ const Container = styled.div`
   flex-direction: column;
   font-family: "Rubik", sans-serif;
 	margin-top: 200px;
-	 border: solid black 2px;
 `;
 const HeaderWrapper = styled.div`
  width 500px;
-border: solid black 2px;
 text-align: center;
 `;
 const HeaderText = styled.h1`
@@ -81,7 +79,6 @@ const HeaderText = styled.h1`
 `;
 
 const Border = styled.hr`
-  border: 1px solid black;
   width: 200px;
   height: 0.5px;
   background-color: black;
@@ -134,7 +131,6 @@ const HeaderTextMobile = styled.h1`
 `;
 
 const BorderMobile = styled.hr`
-  border: 1px solid black;
   width: 200px;
   height: 0.5px;
   background-color: black;

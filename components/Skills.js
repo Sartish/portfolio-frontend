@@ -95,7 +95,6 @@ export default Skills;
 const SkillsContainer = styled.div`
   height: 500px;
  /*  background-color: #fdf5df; */
-  border: solid black 2px;
 	display: flex; 
 	justify-content: center; 
 	flex-direction: column; 
@@ -106,7 +105,6 @@ const SkillsContainer = styled.div`
 `;
 const HeaderContainer = styled.div`
 	width 500px;
-  border: solid black 2px;
 	text-align: center;
 	margin-top: 0;
 `;
@@ -116,7 +114,6 @@ const HeaderOne = styled.h1`
   line-height: 50px;
 	font-family: "Rubik", sans-serif;
 	padding: 10px;
-	 border: solid black 2px;
 `;
 const HeaderTwo = styled.h2`
   font-size: 14px;

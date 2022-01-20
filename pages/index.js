@@ -50,8 +50,6 @@ const Home = ({ projects }) => {
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<Header />
-
-					<Plant />
 					<AboutMe />
 					<Skills />
 					<div className="project-header-container">
