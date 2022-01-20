@@ -83,7 +83,6 @@ const HeaderWrapperMobile = styled.div`
   flex-direction: column;
   height: 800px;
   background-color: #fdf5df;
-  clip-path: polygon(0 0, 49% 0, 100% 0, 100% 100%, 100% 66%, 0 100%, 0 48%);
 	padding: 50px;
 	width: 100%;
 `;
@@ -159,7 +158,6 @@ const HeaderWrapperDesktop = styled.div`
   height: 700px;
 	border: 2px solid black;
   background-color: #fdf5df;
-  clip-path: polygon(0 0, 49% 0, 100% 0, 100% 100%, 100% 66%, 0 100%, 0 48%);
 `;
 
 const WrapperAllHeadersDesktop = styled.div`
