@@ -20,9 +20,8 @@ import { GlobalStyles } from "../components/Globalstyles";
 import { lightTheme, darkTheme } from "../components/Themes" */
 
 
-
-
 const Home = ({ projects }) => {
+	const [isClick, setClick] = useState(false);
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 	const isDesktopOrLaptop = useMediaQuery({
 		query: "(min-width:  1024px)",
