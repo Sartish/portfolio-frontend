@@ -94,10 +94,12 @@ const Home = ({ projects }) => {
 												{project.text}
 												<div className="social-media-desktop">
 													<a className="link-github" href={project.linkcode}>
-														<Image className="github-icon" src={github} />
+														<Image className="github-icon" src={github} width={40}
+															height={40} />
 													</a>
 													<a className="link-new-link" href={project.linkcode}>
-														<Image className="new-link-icon" src={newtab} />
+														<Image className="new-link-icon" src={newtab} width={40}
+															height={40} />
 													</a>
 												</div>
 											</p>
@@ -139,10 +141,12 @@ const Home = ({ projects }) => {
 												{project.text}
 												<div className="social-media-desktop">
 													<a className="link-github" href={project.linkcode}>
-														<Image className="github-icon" src={github} />
+														<Image className="github-icon" src={github} width={40}
+															height={40} />
 													</a>
 													<a className="link-new-link" href={project.linkcode}>
-														<Image className="new-link-icon" src={newtab} />
+														<Image className="new-link-icon" src={newtab} width={40}
+															height={40} />
 													</a>
 												</div>
 											</p>
@@ -174,42 +178,39 @@ const Home = ({ projects }) => {
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<Header />
 					<AboutMe />
+					<h1 className="featured-project-header-mobile">Featured Projects</h1>
 					{projects.map((project) => {
 						return (
 							<div key={project._id}>
-								<h1 className="featured-project-header-mobile">Featured Projects</h1>
 								<div className="project-container-mobile">
-									<section className={"project-section-mobile"}>
-										<a href={project.linkproject}>
-											<img
-												className="project-image-mobile"
-												src={urlFor(project.image)}
-											/>
-										</a>
-										<div className="project-info-mobile">
-											<div className="project-title">{project.title}</div>
-											<p className="project-text">
-												{project.text}
-												<div className="social-media-desktop">
-													<a className="link-github" href={project.linkcode}>
-														<Image className="github-icon" src={github} />
-													</a>
-													<a className="link-new-link" href={project.linkcode}>
-														<Image className="new-link-icon" src={newtab} />
-													</a>
-												</div>
-											</p>
-											<div className="tech-attributes">
-												<div>{project.tech[1]}</div>
-												<div>{project.tech[2]}</div>
-												<div>{project.tech[3]}</div>
-												<div>{project.tech[4]}</div>
-												<div>{project.tech[5]}</div>
-												<div>{project.tech[6]}</div>
-												<div>{project.tech[7]}</div>
-												<div>{project.tech[8]}</div>
+									<section className="project-section-mobile">
+										<img
+											className="project-image-mobile"
+											src={urlFor(project.image)}
+										/>
+										<div className="project-title-mobile">{project.title}</div>
+										<p className="project-text-mobile">
+											{project.text}
+											<div className="social-media-mobile">
+												<a className="link-github" href={project.linkcode}>
+													<Image className="github-icon" src={github} width={30}
+														height={40} />
+												</a>
+												<a className="link-new-link" href={project.linkcode}>
+													<Image className="new-link-icon" src={newtab} width={30}
+														height={40} />
+												</a>
 											</div>
-											<div>{project.linkcode}</div>
+										</p>
+										<div className="tech-attributes">
+											<div>{project.tech[1]}</div>
+											<div>{project.tech[2]}</div>
+											<div>{project.tech[3]}</div>
+											<div>{project.tech[4]}</div>
+											<div>{project.tech[5]}</div>
+											<div>{project.tech[6]}</div>
+											<div>{project.tech[7]}</div>
+											<div>{project.tech[8]}</div>
 										</div>
 									</section>
 								</div>

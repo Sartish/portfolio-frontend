@@ -19,21 +19,22 @@ a {
     text-decoration: none;
     color: black;
 }
-a.link-github{
-	width: 20px;
-}
+
+
+
 
 p {
 	font-family: 'Rubik', sans-serif;
 	font-size: 18px;
 }
 .social-media-desktop{
-	width: 400px;
 	text-align: right;
+	width: 95%;
 }
 
 .link-github{
-	padding-right: 20px;
+	padding-right: 10px;
+	text-align: right;
 }
 
 .project-header-container{
@@ -84,7 +85,8 @@ border: 2px solid black;
 	font-size: 28px;
 	border: solid 2px red;
 	text-align: left;
-	width: 100%;
+	width: 95%;
+
 }
 
 .project-text {
@@ -92,6 +94,7 @@ border: 2px solid black;
   line-height: 28px;
 	font-size: 14px;
 	border: solid 2px red;
+	width: 95%;
 }
 
 .tech-attributes{
@@ -172,6 +175,7 @@ align-items: center;
 flex-direction: column;
 }
 
+
 .project-section-mobile{
 	display: flex;  
 	flex-direction: column; 
@@ -185,17 +189,37 @@ flex-direction: column;
 }
 
 
+.project-title-mobile {
+	color: black;
+	font-family: 'Rubik', sans-serif;
+	font-size: 28px;
+	border: solid 2px red;
+	text-align: left;
+	width: 95%;
+}
+
+.project-text-mobile {
+	letter-spacing: 2px;
+  line-height: 28px;
+	font-size: 14px;
+	border: solid 2px red;
+	width: 95%;
+}
+
+.social-media-mobile{
+	width: 95%;
+	text-align: right; 
+}
+
 .icons{
 	color: black;
 }
+
 i{
 	color: black;
 	font-size: 40px;
 }
 
-.tailwind {
-	width: 200px;
-}
 
 .profile-picture{
 	width: 600px;
