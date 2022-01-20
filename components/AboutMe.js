@@ -65,7 +65,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
-	margin-top: 200px;
+	margin-top: 20px;
 `;
 const HeaderWrapper = styled.div`
  width 500px;

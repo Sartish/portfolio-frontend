@@ -23,8 +23,8 @@ const Header = () => {
 	return (
 		<>
 			{isDesktopOrLaptop && (
-				<HeaderWrapperDesktop>
-					<WrapperAllHeadersDesktop>
+				<HeaderWrapperDesktop className="bg-orange-300 flex justify-center items-center h-screen w-full">
+					<WrapperAllHeadersDesktop className="flex flex-col h-1/2 justify-around items-stretch">
 						<FirstHeaderDesktop>
 							<span data-aos="fade-left">Hi </span>{" "}
 							<span data-aos="fade-left">my name is</span>
@@ -35,32 +35,23 @@ const Header = () => {
 						<ThirdHeaderDesktop data-aos="fade-up">
 							I like building things for the web.
 						</ThirdHeaderDesktop>
-						{/* <ParagraphDesktop data-aos="fade-left">
-						I am a career changer, that has a background in economic and politics
-						& now turned into a developer.
-					</ParagraphDesktop> */}
 						<Button>See my work </Button>
 					</WrapperAllHeadersDesktop>
 				</HeaderWrapperDesktop>
 			)}
 
 			{isTabletOrMobile && (
-				<HeaderWrapperMobile>
-					<WrapperAllHeaders>
+				<HeaderWrapperMobile className="bg-orange-300 flex justify-center items-center h-screen w-full">
+					<WrapperAllHeaders className="flex flex-col h-1/2 justify-around items-stretch">
 						<FirstHeaderMobile>
 							<span data-aos="fade-left">Hi my name is</span>
 						</FirstHeaderMobile>
 						<SecondHeaderMobile data-aos="fade-up">
 							Sara Carlstein.
-							<ThirdHeaderMobile data-aos="fade-up">
-								I like building things for the web.
-							</ThirdHeaderMobile>
 						</SecondHeaderMobile>
-
-						{/* 						<ParagraphMobile data-aos="fade-left">
-							I am a career changer, that has a background in economic and
-							politics & now turned into a developer.
-						</ParagraphMobile> */}
+						<ThirdHeaderMobile data-aos="fade-up">
+							I like building things for the web.
+						</ThirdHeaderMobile>
 						<ButtonMobile>See my work </ButtonMobile>
 					</WrapperAllHeaders>
 				</HeaderWrapperMobile>
@@ -77,21 +68,10 @@ const HeaderWrapperMobile = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
   margin: 0;
   font-family: "Rubik", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 800px;
-  background-color: #fdf5df;
-	padding: 50px;
-	width: 100%;
 `;
 
 const WrapperAllHeaders = styled.div`
  display: flex; 
- justify-content: center;
- align-items: flex-start; 
- flex-direction: column;
  `;
 
 const FirstHeaderMobile = styled.h1`
@@ -100,10 +80,6 @@ const FirstHeaderMobile = styled.h1`
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
-  margin-bottom: 20px;
-  display: flex;
-	margin-top: -150px;
-	min-width: 300px;
 `;
 
 const SecondHeaderMobile = styled.h2`
@@ -149,22 +125,11 @@ const ButtonMobile = styled.button`
 const HeaderWrapperDesktop = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
   margin: 0;
-  font-family: "Rubik", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 700px;
-	border: 2px solid black;
-  background-color: #fdf5df;
+		border: 2px solid black;
 `;
 
 const WrapperAllHeadersDesktop = styled.div`
-display:flex;
-flex-direction: column; 
-height: 350px;
-widht: 95%;
+border: 2px solid black;
 `;
 
 
@@ -173,16 +138,13 @@ const FirstHeaderDesktop = styled.h1`
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
-  margin-bottom: 40px;
 `;
 
 const SecondHeaderDesktop = styled.h2`
   font-size: 80px;
-  text-align: left;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 70px;
-	margin-bottom: 35px;
 `;
 
 const ThirdHeaderDesktop = styled.h3`
@@ -205,10 +167,8 @@ const ParagraphDesktop = styled.p`
 `;
 
 const Button = styled.button`
-  position: absolute;
-  top: 60%;
   left: calc(50% - 200px);
-  background-color: #fdf5df; /* Green */
+  background-color: #fdf5df;
   border: 2px solid black;
   color: black;
   padding: 15px 32px;
