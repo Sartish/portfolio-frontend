@@ -85,6 +85,7 @@ const HeaderWrapperMobile = styled.div`
   background-color: #fdf5df;
   clip-path: polygon(0 0, 49% 0, 100% 0, 100% 100%, 100% 66%, 0 100%, 0 48%);
 	padding: 50px;
+	width: 100%;
 `;
 
 const WrapperAllHeaders = styled.div`
