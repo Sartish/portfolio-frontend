@@ -27,17 +27,15 @@ p {
 	font-family: 'Rubik', sans-serif;
 	font-size: 18px;
 }
-.social-media-desktop{
-	text-align: right;
-	width: 95%;
-}
+
 
 .link-github{
 	padding-right: 10px;
-	text-align: right;
 }
 
-.project-header-container{
+	/*DESKTOOP STYLING PROJECTS*/
+
+	.project-header-container{
 	display: flex; 
 	justify-content: center; 
 	align-items: center;
@@ -54,7 +52,13 @@ border: 2px solid black;
 }
 
 
-	/*DESKTOOP STYLING PROJECTS*/
+	.social-media-desktop{
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
 .featured-project-header-desktop{
 	width: 500px;
 	border: solid black 2px;
@@ -208,7 +212,10 @@ flex-direction: column;
 
 .social-media-mobile{
 	width: 95%;
-	text-align: right; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
 }
 
 .icons{

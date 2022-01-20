@@ -93,20 +93,23 @@ export default Skills;
 
 
 const SkillsContainer = styled.div`
-  height: 700px;
+  height: 500px;
  /*  background-color: #fdf5df; */
   border: solid black 2px;
 	display: flex; 
 	justify-content: center; 
 	flex-direction: column; 
 	align-items: center; 
+	border: pink 2px solid;
+	margin-bottom: 80px;
 /* clip-path: polygon(23% 16%, 100% 0, 100% 50%, 100% 83%, 0 100%, 0 81%, 0 0); */
 
 `;
 const HeaderContainer = styled.div`
- width 500px;
+	width 500px;
   border: solid black 2px;
 	text-align: center;
+	margin-top: 0;
 `;
 const HeaderOne = styled.h1`
   font-size: 35px;

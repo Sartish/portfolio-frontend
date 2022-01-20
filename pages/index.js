@@ -13,6 +13,7 @@ import NavBar from "../components/NavBar"
 import StickyBar from "../components/StickyBar";
 import github from "../assets/github.svg";
 import newtab from "../assets/newtab.svg";
+import heart from "../assets/heart.svg";
 
 /* import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/Globalstyles";
@@ -93,14 +94,22 @@ const Home = ({ projects }) => {
 											<p className="project-text">
 												{project.text}
 												<div className="social-media-desktop">
-													<a className="link-github" href={project.linkcode}>
-														<Image className="github-icon" src={github} width={40}
-															height={40} />
-													</a>
-													<a className="link-new-link" href={project.linkcode}>
-														<Image className="new-link-icon" src={newtab} width={40}
-															height={40} />
-													</a>
+													<div className="social-media-icon-left">
+														<a className="link-new-link" href={project.linkcode}>
+															<Image className="new-link-icon" src={heart} width={30}
+																height={40} />
+														</a>
+													</div>
+													<div className="social-media-icons-right">
+														<a className="link-github" href={project.linkcode}>
+															<Image className="github-icon" src={github} width={30}
+																height={40} />
+														</a>
+														<a className="link-new-link" href={project.linkcode}>
+															<Image className="new-link-icon" src={newtab} width={30}
+																height={40} />
+														</a>
+													</div>
 												</div>
 											</p>
 
@@ -140,14 +149,22 @@ const Home = ({ projects }) => {
 											<p className="project-text">
 												{project.text}
 												<div className="social-media-desktop">
-													<a className="link-github" href={project.linkcode}>
-														<Image className="github-icon" src={github} width={40}
-															height={40} />
-													</a>
-													<a className="link-new-link" href={project.linkcode}>
-														<Image className="new-link-icon" src={newtab} width={40}
-															height={40} />
-													</a>
+													<div className="social-media-icon-left">
+														<a className="link-new-link" href={project.linkcode}>
+															<Image className="new-link-icon" src={heart} width={30}
+																height={40} />
+														</a>
+													</div>
+													<div className="social-media-icons-right">
+														<a className="link-github" href={project.linkcode}>
+															<Image className="github-icon" src={github} width={30}
+																height={40} />
+														</a>
+														<a className="link-new-link" href={project.linkcode}>
+															<Image className="new-link-icon" src={newtab} width={30}
+																height={40} />
+														</a>
+													</div>
 												</div>
 											</p>
 											<div className="tech-attributes">
@@ -192,14 +209,22 @@ const Home = ({ projects }) => {
 										<p className="project-text-mobile">
 											{project.text}
 											<div className="social-media-mobile">
-												<a className="link-github" href={project.linkcode}>
-													<Image className="github-icon" src={github} width={30}
-														height={40} />
-												</a>
-												<a className="link-new-link" href={project.linkcode}>
-													<Image className="new-link-icon" src={newtab} width={30}
-														height={40} />
-												</a>
+												<div className="social-media-icon-left">
+													<a className="link-new-link" href={project.linkcode}>
+														<Image className="new-link-icon" src={heart} width={30}
+															height={40} />
+													</a>
+												</div>
+												<div className="social-media-icons-right">
+													<a className="link-github" href={project.linkcode}>
+														<Image className="github-icon" src={github} width={30}
+															height={40} />
+													</a>
+													<a className="link-new-link" href={project.linkcode}>
+														<Image className="new-link-icon" src={newtab} width={30}
+															height={40} />
+													</a>
+												</div>
 											</div>
 										</p>
 										<div className="tech-attributes">
