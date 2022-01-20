@@ -104,7 +104,6 @@ const FirstHeaderMobile = styled.h1`
   display: flex;
 	margin-top: -150px;
 	min-width: 300px;
-	border: 2px solid black;
 
 `;
 

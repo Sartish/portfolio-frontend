@@ -100,7 +100,6 @@ const SkillsContainer = styled.div`
 	justify-content: center; 
 	flex-direction: column; 
 	align-items: center; 
-	border: pink 2px solid;
 	margin-bottom: 80px;
 /* clip-path: polygon(23% 16%, 100% 0, 100% 50%, 100% 83%, 0 100%, 0 81%, 0 0); */
 

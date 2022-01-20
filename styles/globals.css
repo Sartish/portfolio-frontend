@@ -48,7 +48,6 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 width: 100%;
-border: 2px solid black;
 }
 
 
@@ -61,7 +60,6 @@ border: 2px solid black;
 }
 .featured-project-header-desktop{
 	width: 500px;
-	border: solid black 2px;
 	text-align: center;
 	font-size: 35px;
 	letter-spacing: 4px;
@@ -87,7 +85,6 @@ border: 2px solid black;
 	color: black;
 	font-family: 'Rubik', sans-serif;
 	font-size: 28px;
-	border: solid 2px red;
 	text-align: left;
 	width: 95%;
 
@@ -97,7 +94,6 @@ border: 2px solid black;
 	letter-spacing: 2px;
   line-height: 28px;
 	font-size: 14px;
-	border: solid 2px red;
 	width: 95%;
 }
 
@@ -135,7 +131,6 @@ border: 2px solid black;
 	flex-direction: column; 
 	margin: 20px;
 	padding: 20px;
-	border: 2px solid black;
 }
 
 .project-info-right-first-section {
@@ -197,7 +192,6 @@ flex-direction: column;
 	color: black;
 	font-family: 'Rubik', sans-serif;
 	font-size: 28px;
-	border: solid 2px red;
 	text-align: left;
 	width: 95%;
 }
@@ -206,7 +200,6 @@ flex-direction: column;
 	letter-spacing: 2px;
   line-height: 28px;
 	font-size: 14px;
-	border: solid 2px red;
 	width: 95%;
 }
 
