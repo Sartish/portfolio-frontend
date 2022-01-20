@@ -35,11 +35,11 @@ p {
 
 	/*DESKTOOP STYLING PROJECTS*/
 
-	.project-header-container{
-	display: flex; 
-	justify-content: center; 
-	align-items: center;
-	flex-direction: column;
+.project-header-container{
+display: flex; 
+justify-content: center; 
+align-items: center;
+flex-direction: column;
 }
 
 .project-container-desktop {
@@ -51,13 +51,14 @@ width: 100%;
 }
 
 
-	.social-media-desktop{
-	width: 95%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: row;
+.social-media-desktop{
+width: 95%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
 }
+
 .featured-project-header-desktop{
 	width: 500px;
 	text-align: center;
@@ -157,6 +158,7 @@ width: 100%;
 .featured-project-header-mobile{
 	text-align: center;
 	margin-top: 20px;
+	 font-size: 28px;
 }
 
 .page-container-mobile {
@@ -181,6 +183,7 @@ flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 50px;
+	width: 90%;
 }
 
 .project-image-mobile{
@@ -193,14 +196,14 @@ flex-direction: column;
 	font-family: 'Rubik', sans-serif;
 	font-size: 28px;
 	text-align: left;
-	width: 95%;
+	width: 90%;
 }
 
 .project-text-mobile {
 	letter-spacing: 2px;
   line-height: 28px;
 	font-size: 14px;
-	width: 95%;
+	width: 90%;
 }
 
 .social-media-mobile{
@@ -210,6 +213,27 @@ flex-direction: column;
 	align-items: center;
 	flex-direction: row;
 }
+
+.tech-attributes-mobile {
+	padding: 3px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 2px;
+  line-height: 20px;
+	font-size: 8px;
+	width: 100%;
+}
+
+.tech-attributes-mobile div{
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+	background-color: #F7E8C4;
+	font-family: 'Rubik', sans-serif;
+	font-weight: bold;
+}
+
 
 .icons{
 	color: black;

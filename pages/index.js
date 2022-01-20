@@ -227,7 +227,7 @@ const Home = ({ projects }) => {
 												</div>
 											</div>
 										</p>
-										<div className="tech-attributes">
+										<div className="tech-attributes-mobile">
 											<div>{project.tech[1]}</div>
 											<div>{project.tech[2]}</div>
 											<div>{project.tech[3]}</div>
