@@ -22,7 +22,7 @@ const Skills = () => {
 					<HeaderOne>Skills & Tools</HeaderOne>
 					<HeaderTwo>What I use to create</HeaderTwo>
 				</HeaderContainer>
-				<IconWrapper>
+				<IconWrapper className="grid grid-cols-3 md:grid-cols-8 content-center justify-center gap-10">
 					<StyledIcon>
 						<i className="devicon-nextjs-original"></i>
 						<IconText>Nextjs</IconText>
@@ -93,13 +93,13 @@ export default Skills;
 
 
 const SkillsContainer = styled.div`
-  height: 500px;
+width: 100%;
+
  /*  background-color: #fdf5df; */
 	display: flex; 
 	justify-content: center; 
 	flex-direction: column; 
 	align-items: center; 
-	margin-bottom: 80px;
 /* clip-path: polygon(23% 16%, 100% 0, 100% 50%, 100% 83%, 0 100%, 0 81%, 0 0); */
 
 `;
@@ -109,7 +109,7 @@ const HeaderContainer = styled.div`
 	margin-top: 0;
 `;
 const HeaderOne = styled.h1`
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 4px;
   line-height: 50px;
 	font-family: "Rubik", sans-serif;
@@ -124,16 +124,14 @@ const HeaderTwo = styled.h2`
 `;
 
 const IconWrapper = styled.div`
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	width: 700px;
-	height: 200px;
+	padding: 20px;
+	width: 80%;
+	
 `;
 
 const StyledIcon = styled.div`
     fill: black;
     width: 60px;
-		padding: 20px;
 		display: flex; 
 		flex-direction: column; 
 		text-align: center;

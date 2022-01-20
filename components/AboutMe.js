@@ -127,7 +127,7 @@ const HeaderWrapperMobile = styled.div`
 const HeaderTextMobile = styled.h1`
   max-width: 200px;
 	text-align: center;
-	 font-size: 28px;
+	 font-size: 30px;
 `;
 
 const BorderMobile = styled.hr`

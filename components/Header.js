@@ -24,22 +24,23 @@ const Header = () => {
 		<>
 			{isDesktopOrLaptop && (
 				<HeaderWrapperDesktop>
-					<FirstHeaderDesktop>
-						<span data-aos="fade-left">Hi </span>{" "}
-						<span data-aos="fade-left">my name is</span>
-					</FirstHeaderDesktop>
-					<SecondHeaderDesktop data-aos="fade-up">
-						Sara Carlstein.
-					</SecondHeaderDesktop>
-					<ThirdHeaderDesktop data-aos="fade-up">
-						I like building things for the web.
-					</ThirdHeaderDesktop>
-					{/* <ParagraphDesktop data-aos="fade-left">
+					<WrapperAllHeadersDesktop>
+						<FirstHeaderDesktop>
+							<span data-aos="fade-left">Hi </span>{" "}
+							<span data-aos="fade-left">my name is</span>
+						</FirstHeaderDesktop>
+						<SecondHeaderDesktop data-aos="fade-up">
+							Sara Carlstein.
+						</SecondHeaderDesktop>
+						<ThirdHeaderDesktop data-aos="fade-up">
+							I like building things for the web.
+						</ThirdHeaderDesktop>
+						{/* <ParagraphDesktop data-aos="fade-left">
 						I am a career changer, that has a background in economic and politics
 						& now turned into a developer.
 					</ParagraphDesktop> */}
-
-					<Button>See my work </Button>
+						<Button>See my work </Button>
+					</WrapperAllHeadersDesktop>
 				</HeaderWrapperDesktop>
 			)}
 
@@ -82,8 +83,6 @@ const HeaderWrapperMobile = styled.div`
   flex-direction: column;
   height: 800px;
   background-color: #fdf5df;
-  background-size: cover;
-  background-position: top;
   clip-path: polygon(0 0, 49% 0, 100% 0, 100% 100%, 100% 66%, 0 100%, 0 48%);
 	padding: 50px;
 `;
@@ -94,6 +93,7 @@ const WrapperAllHeaders = styled.div`
  align-items: flex-start; 
  flex-direction: column;
  `;
+
 const FirstHeaderMobile = styled.h1`
   margin: 0;
   font-size: 14px;
@@ -104,7 +104,6 @@ const FirstHeaderMobile = styled.h1`
   display: flex;
 	margin-top: -150px;
 	min-width: 300px;
-
 `;
 
 const SecondHeaderMobile = styled.h2`
@@ -127,13 +126,6 @@ const ThirdHeaderMobile = styled.h3`
 	min-width: 300px
 `;
 
-const ParagraphMobile = styled.p`
-  font-size: 12px;
-  font-family: "Rubik", sans-serif;
-  letter-spacing: 4px;
-  line-height: 20px;
-  margin-bottom: 5px;
-`;
 
 const ButtonMobile = styled.button`
   left: calc(50% - 200px);
@@ -164,21 +156,25 @@ const HeaderWrapperDesktop = styled.div`
   flex-direction: column;
   width: 100%;
   height: 700px;
+	border: 2px solid black;
   background-color: #fdf5df;
-  background-size: cover;
-  background-position: top;
   clip-path: polygon(0 0, 49% 0, 100% 0, 100% 100%, 100% 66%, 0 100%, 0 48%);
 `;
+
+const WrapperAllHeadersDesktop = styled.div`
+display:flex;
+flex-direction: column; 
+height: 350px;
+widht: 95%;
+`;
+
 
 const FirstHeaderDesktop = styled.h1`
   font-size: 18px;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
-  margin-bottom: 15px;
-  position: absolute;
-  top: 20%;
-  left: 10%;
+  margin-bottom: 40px;
 `;
 
 const SecondHeaderDesktop = styled.h2`
@@ -187,9 +183,7 @@ const SecondHeaderDesktop = styled.h2`
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 70px;
-  position: absolute;
-  top: 30%;
-  left: 10%;
+	margin-bottom: 35px;
 `;
 
 const ThirdHeaderDesktop = styled.h3`
@@ -198,9 +192,6 @@ const ThirdHeaderDesktop = styled.h3`
   letter-spacing: 4px;
   line-height: 50px;
   font-family: "Rubik", sans-serif;
-  position: absolute;
-  top: 45%;
-  left: 10%;
 `;
 
 const ParagraphDesktop = styled.p`
