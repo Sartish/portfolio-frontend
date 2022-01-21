@@ -5,7 +5,10 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"build:styles": "postcss src/tailwind.css -o src/styles.css",
+		"prebuild": "npm run build:styles",
+		"prestart": "npm run build:styles"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.7.1",
@@ -14,6 +17,7 @@
 		"@fortawesome/free-brands-svg-icons": "^5.15.4",
 		"@fortawesome/free-solid-svg-icons": "^5.15.4",
 		"@fortawesome/react-fontawesome": "^0.1.16",
+		"@fullhuman/postcss-purgecss": "^4.1.3",
 		"@headlessui/react": "^1.4.3",
 		"@material-ui/core": "^4.12.3",
 		"@material-ui/styles": "^4.11.4",
