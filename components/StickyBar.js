@@ -1,67 +1,43 @@
-import github from "../assets/github-side.svg";
+import { useMediaQuery } from "react-responsive";
+import Image from "next/image";
 import linkedin from "../assets/linkedin.svg";
 import medium from "../assets/medium.svg";
+import github from "../assets/github-side.svg";
 import codepen from "../assets/codepen.svg";
-import Image from "next/image";
-import styled from "styled-components";
 
 const StickyBar = () => {
+
+	const isDesktopOrLaptop = useMediaQuery({
+		query: "(min-width:  1024px)",
+	});
+
 	return (
-		<>
 
-			<aside className="fixed w-full z-10 my-60">
-				<StickyWrapper>
-					<SocialIconWrapper>
-						<SocialMediaIcon>
-							<Image src={github} />
-						</SocialMediaIcon>
-						<SocialMediaIcon>
-							<Image src={linkedin} />
-						</SocialMediaIcon>
-						{/* 						<SocialMediaIcon>
-							<Image src={instagram} />
-						</SocialMediaIcon> */}
-						<SocialMediaIcon>
-							<Image src={medium} />
-						</SocialMediaIcon>
-						<SocialMediaIcon>
+		<>{isDesktopOrLaptop && (
+			<aside className="fixed w-full z-10 my-60 bg-red-500">
+				<div className="flex flex-row justify-between w-full">
+					<div classNme="flex flex-col w-full p-20">
+						<div className="p-5">
 							<Image src={codepen} />
-						</SocialMediaIcon>
-					</SocialIconWrapper>
-					<Email>Carlstein.sara@gmail.com</Email>
-				</StickyWrapper>
+						</div>
+						<div className="p-5">
+							<Image src={github} />
+						</div>
+						<div className="p-5">
+							<Image src={linkedin} />
+						</div>
+						<div className="p-5">
+							<Image src={medium} />
+						</div>
+					</div>
+					<p className="email">carlstein.sara@gmail.com</p>
+				</div>
 			</aside>
+		)}
+
 		</>
+
 	);
-};
+}
 
-export default StickyBar;
-
-const StickyWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-const SocialIconWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-`;
-const SocialMediaIcon = styled.div`
-  padding: 15px;
-`;
-
-const Email = styled.div`
-  padding: 10px;
-  display: flex;
-  width: 5px;
-  letter-spacing: 4px;
-  line-height: 20px;
-  font-size: 18px;
-  transform-origin: 0 0;
-  transform: rotate(90deg);
-`;
-const PlantImage = styled.div`
-  width: 100px;
-`;
+export default StickyBar

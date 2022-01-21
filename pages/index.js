@@ -42,12 +42,12 @@ const Home = ({ projects }) => {
 				<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
 			</Head>
 			<NavBar />
+			<StickyBar />
 			<Header />
 			<AboutMe />
 			<Skills />
 			{isDesktopOrLaptop && (
 				<section className="page-container">
-					<StickyBar />
 					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
@@ -55,6 +55,7 @@ const Home = ({ projects }) => {
 						<h1 className="featured-project-header-desktop">Featured Projects</h1>
 						<h2 className="featured-project-second-header-desktop">Some stuff I have created</h2>
 					</div>
+
 					{projects.map((project) => {
 						return (
 							<div key={project._id}>

@@ -18,9 +18,23 @@ body {
 
 @layer utilities {
   .clip-path-slant-down-right {
-    clip-path: polygon(0 0, 100% 0, 100% 74%, 100% 100%, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%, 0 100%, 0% 50%);
   }
 }
+
+@layer utilities {
+	.email {
+	padding: 10px;
+	display: flex;
+	width: 5px;
+	letter-spacing: 4px;
+	line-height: 20px;
+	font-size: 18px;
+	transform-origin: 0 0;
+	transform: rotate(90deg);
+}
+}
+
 
 a {
     text-decoration: none;
@@ -271,3 +285,6 @@ i{
 	width: 40px;
 	height: 40px;
 }
+
+
+
