@@ -94,7 +94,6 @@ flex-direction: row;
 }
 
 .featured-project-header-desktop{
-	width: 500px;
 	text-align: center;
 	font-size: 35px;
 	letter-spacing: 4px;
@@ -191,8 +190,7 @@ flex-direction: row;
 
 .featured-project-header-mobile{
 	text-align: center;
-	margin-top: 200px;
-	  font-size: 30px;
+	font-size: 30px;
   letter-spacing: 4px;
   line-height: 50px;
 	font-family: "Rubik", sans-serif;
