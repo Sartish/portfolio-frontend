@@ -35,6 +35,12 @@ body {
 }
 }
 
+ h1{
+	font-size: 30px;
+  letter-spacing: 4px;
+  line-height: 50px;
+	font-family: "Rubik", sans-serif;
+ }
 
 a {
     text-decoration: none;
@@ -50,7 +56,9 @@ a {
 
 p {
 	font-family: 'Rubik', sans-serif;
-	font-size: 18px;
+	font-size: 14px;
+	letter-spacing: 2px;
+  line-height: 30px;
 }
 
 
@@ -213,7 +221,6 @@ flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 50px;
-	width: 90%;
 }
 
 .project-image-mobile{

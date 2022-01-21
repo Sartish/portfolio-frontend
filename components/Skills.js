@@ -93,40 +93,33 @@ export default Skills;
 
 
 const SkillsContainer = styled.div`
-width: 100%;
-
- /*  background-color: #fdf5df; */
+	width: 100%;
 	display: flex; 
 	justify-content: center; 
 	flex-direction: column; 
 	align-items: center; 
-/* clip-path: polygon(23% 16%, 100% 0, 100% 50%, 100% 83%, 0 100%, 0 81%, 0 0); */
-
+	margin-bottom: 30px;
 `;
 const HeaderContainer = styled.div`
-	width 500px;
-	text-align: center;
 	margin-top: 0;
+	border: black solid 2px;
 `;
 const HeaderOne = styled.h1`
   font-size: 30px;
   letter-spacing: 4px;
   line-height: 50px;
-	font-family: "Rubik", sans-serif;
-	padding: 10px;
 `;
 const HeaderTwo = styled.h2`
   font-size: 14px;
   font-family: "Rubik", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
-	padding: 10px;
+	padding-bottom: 10px;
 `;
 
 const IconWrapper = styled.div`
 	padding: 20px;
 	width: 80%;
-	
 `;
 
 const StyledIcon = styled.div`
