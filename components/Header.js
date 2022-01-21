@@ -17,8 +17,8 @@ const Header = () => {
 					<button className="mt-10">see my mork</button>
 				</div>
 			</header>
-			<section class="absolute lg:bottom-10 bottom-0 right-0 lg:right-6">
-				<h1 class="m-0 text-center w-60 lg:w-4/5"><Image src={plant} /></h1>
+			<section className="absolute lg:bottom-10 bottom-0 right-0 lg:right-6">
+				<h1 className="m-0 text-center w-60 lg:w-4/5"><Image src={plant} /></h1>
 			</section>
 		</>
 
