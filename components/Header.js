@@ -6,8 +6,8 @@ const Header = () => {
 
 	return (
 		<>
-			<header className="w-full h-screen flex flex-col lg:flex-row justify-center items-center p-10 lg:p-40 p-5">
-				<div className="flex flex-col w-96 lg:w-full justify-between lg:justify-center items-center lg:items-start lg:mr-5 lg:mt-0 mt-20">
+			<header className="w-full h-screen flex flex-col lg:flex-row justify-center items-center p-5 lg:p-40">
+				<div className="flex flex-col w-96 lg:w-full justify-between lg:justify-center items-center lg:items-start lg:mr-5 lg:mt-0 mt-10">
 					<h1 className="font-Rubik lg:text-xl text-lg leading-7 tracking-widest mb-5 bg-yellow p-2">Hi! My name is</h1>
 					<div className="flex clip-path-arrow-down lg:clip-path-arrow-right mt-10 mb-10 lg:mt-0 lg:mb-0 w-60 lg:w-full">
 						<Image src={mountain} />
