@@ -35,7 +35,7 @@ const Home = ({ projects }) => {
 	};
 
 	return (
-		<>
+		<div className="w-screen border-4">
 			<Head>
 				<title>My page title</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -47,7 +47,7 @@ const Home = ({ projects }) => {
 			<AboutMe />
 			<Skills />
 			{isDesktopOrLaptop && (
-				<section className="page-container">
+				<section>
 					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
@@ -181,7 +181,6 @@ const Home = ({ projects }) => {
 						);
 					})}
 					{/* 				</ThemeProvider> */}
-					<WritingCard />
 				</section>
 			)}
 
@@ -238,10 +237,10 @@ const Home = ({ projects }) => {
 						);
 					})}
 					{/* 				</ThemeProvider> */}
-					<WritingCard />
+
 				</section>
 			)}
-		</>
+		</div>
 	);
 };
 
