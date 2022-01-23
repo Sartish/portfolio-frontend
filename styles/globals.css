@@ -22,8 +22,16 @@ body {
 */
 
 @layer utilities {
-  .clip-path-slant-down-right {
-    clip-path: polygon(0 0, 100% 0, 100% 73%, 0 100%, 0 100%, 0% 50%);
+  .clip-path-arrow-right {
+clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+transform: rotate(0deg);
+  }
+}
+
+@layer utilities {
+  .clip-path-arrow-down {
+	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+	transform: rotate(90deg);
   }
 }
 
@@ -45,6 +53,14 @@ body {
   letter-spacing: 4px;
   line-height: 50px;
 	font-family: "Rubik", sans-serif;
+ }
+
+  h2{
+	font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 4px;
+  line-height: 20px;
+	padding-bottom: 10px;
  }
 
 a {
@@ -150,7 +166,7 @@ flex-direction: row;
 	margin: 5px;
 	padding: 10px;
 	text-align: center;
-	background-color: #F7E8C4;
+	background-color: #f8f2e1;
 	font-family: 'Rubik', sans-serif;
 	font-weight: bold;
 }
@@ -207,7 +223,7 @@ flex-direction: row;
 	justify-content:center;
 	align-items: center;
 	flex-direction: column;
-	margin: 0;
+	margin: 8px;
 }
 
 .project-container-mobile {
