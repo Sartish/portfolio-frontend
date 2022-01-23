@@ -15,12 +15,12 @@ body {
 	 min-width: 100vh;
 }
 
- @media screen and (min-width: 1024px) {
+ /*@media screen and (min-width: 1024px) {
         html, body{
             width:100%;;
         }
 			}
-
+*/
 
 @layer utilities {
   .clip-path-slant-down-right {
