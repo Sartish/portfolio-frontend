@@ -7,7 +7,10 @@ const AboutMe = () => {
 	return (
 		<>
 			<section className="flex justify-center items-center flex-col mt-40 lg:mt-10 my-20">
-				<h1>About me</h1>
+				<div className="header-container">
+					<h1>About me</h1>
+					<h2>What I like doing all day</h2>
+				</div>
 				<div className="flex justify-center items-center w-2/3 flex-col lg:flex-row">
 					<div className="w-60 lg:w-full photo">
 						<Image className="photo" src={me}></Image>

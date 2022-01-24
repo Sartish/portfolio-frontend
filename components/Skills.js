@@ -103,6 +103,7 @@ const SkillsContainer = styled.div`
 const HeaderContainer = styled.div`
 	margin-top: 0;
 	margin-bottom: 50px;
+	 text-align: center;
 `;
 const HeaderOne = styled.h1`
   font-size: 30px;
