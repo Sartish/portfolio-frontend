@@ -25,6 +25,7 @@ const NavBar = () => {
 									<Link
 										to="first" spy={true} smooth={true} duration={500} offset={-80} activeClass="About">
 										About
+
 									</Link>
 									<Link
 										to="second" spy={true} smooth={true} duration={500} offset={-80}>
@@ -127,8 +128,9 @@ const NavBar = () => {
 									to="first"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-180}
+									offset={40}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+									onClick={() => setIsOpen(!isOpen)}
 								>
 									About
 								</Link>
@@ -138,20 +140,21 @@ const NavBar = () => {
 									to="second"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-340}
+									offset={40}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+									onClick={() => setIsOpen(!isOpen)}
 								>
 									Skills
 								</Link>
-
 								<Link
 									href="/work"
 									activeClass="work"
 									to="third-mobile"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-340}
+									offset={-60}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+									onClick={() => setIsOpen(!isOpen)}
 								>
 									Projects
 								</Link>
@@ -161,8 +164,9 @@ const NavBar = () => {
 									to="fourth"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-100}
+									offset={60}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+									onClick={() => setIsOpen(!isOpen)}
 								>
 									Writings
 								</Link>
@@ -172,7 +176,7 @@ const NavBar = () => {
 									activeClass="work"
 									to="work"
 									smooth={true}
-									offset={50}
+									offset={60}
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
