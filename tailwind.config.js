@@ -11,5 +11,8 @@ module.exports = {
 			'Rubik': ['Rubik', 'sans-serif'],
 		},
 	},
+	height: {
+		'500px': '500px',
+	},
 	plugins: [],
 }
