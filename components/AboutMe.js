@@ -12,7 +12,7 @@ const AboutMe = () => {
 					<h2>What I like doing all day</h2>
 				</div>
 				<div className="flex justify-center items-center w-2/3 flex-col lg:flex-row">
-					<div className="w-60 lg:w-full photo">
+					<div className="w-60 lg:w-[700px] photo">
 						<Image className="photo" src={me}></Image>
 					</div>
 					<p>

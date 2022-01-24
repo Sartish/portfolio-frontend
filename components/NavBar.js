@@ -1,6 +1,9 @@
 import { Transition } from "@headlessui/react" // for smooth transition between tabs
-import { Link } from "react-scroll" //Alternate for tag. In Nexjs we use link for ref
+import { Link, animateScroll as scroll } from "react-scroll";//Alternate for tag. In Nexjs we use link for ref
+import * as Scroll from 'react-scroll';
 import React, { useState } from "react";
+
+
 
 const NavBar = () => {
 
@@ -20,50 +23,30 @@ const NavBar = () => {
 							<div className="hidden md:block">
 								<div className="ml-10 flex items-baseline space-x-4">
 									<Link
-										activeClass="Home"
-										to="about"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
-									>
-										Home
-									</Link>
-									<Link
-										activeClass="about"
-										to="about"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-									>
+										to="first" spy={true} smooth={true} duration={500} offset={-80} activeClass="About">
 										About
 									</Link>
 									<Link
-										activeClass="work"
-										to="work"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+										to="second" spy={true} smooth={true} duration={500} offset={-80}>
+										Skills
+									</Link>
+									<Link
+										activeClass="About"
+										to="third-desktop" spy={true} smooth={true} duration={500}
+										offset={-80}
 									>
 										Projects
 									</Link>
-
 									<Link
-										activeClass="Services"
-										to="work"
-										smooth={true}
-										offset={50}
-										duration={500}
-										className="cursor-pointer hover:bg-blue-600 text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+										activeClass="About"
+										to="fourth" spy={true} smooth={true} duration={500}
+										offset={-80}
 									>
-										Services
+										Writings
 									</Link>
-
 									<Link
 										activeClass="contact"
-										to="contact"
+										to="third"
 										smooth={true}
 										offset={50}
 										duration={500}
@@ -136,38 +119,38 @@ const NavBar = () => {
 						<div className="md:hidden" id="mobile-menu">
 							<div
 								ref={ref}
-								className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
+								className="bg-yellow px-2 pt-2 pb-3 space-y-1 sm:px-3"
 							>
 								<Link
 									href="/home"
 									activeClass="home"
-									to="home"
-									smooth={true}
-									offset={50}
+									to="first"
+									spy={true} smooth={true}
 									duration={500}
+									offset={-180}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Home
+									About
 								</Link>
 								<Link
 									href="/about"
 									activeClass="about"
-									to="about"
-									smooth={true}
-									offset={50}
+									to="second"
+									spy={true} smooth={true}
 									duration={500}
+									offset={-340}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									About
+									Skills
 								</Link>
 
 								<Link
 									href="/work"
 									activeClass="work"
-									to="work"
-									smooth={true}
-									offset={50}
+									to="third-mobile"
+									spy={true} smooth={true}
 									duration={500}
+									offset={-340}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
 									Projects
@@ -175,13 +158,13 @@ const NavBar = () => {
 								<Link
 									href="/services"
 									activeClass="services"
-									to="services"
-									smooth={true}
-									offset={50}
+									to="fourth"
+									spy={true} smooth={true}
 									duration={500}
+									offset={-100}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Services
+									Writings
 								</Link>
 
 								<Link

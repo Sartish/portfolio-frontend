@@ -44,7 +44,9 @@ const Home = ({ projects }) => {
 			<NavBar />
 			<StickyBar />
 			<Header />
+			<a id="first" name="first"></a>
 			<AboutMe />
+			<a id="second" name="second"></a>
 			<Skills />
 			{isDesktopOrLaptop && (
 				<section>
@@ -52,10 +54,11 @@ const Home = ({ projects }) => {
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<div className="project-header-container">
-						<h1 className="featured-project-header-desktop">Featured Projects</h1>
-						<h2 className="featured-project-second-header-desktop">Some stuff I have created</h2>
+						<a id="third-desktop" name="third-desktop">
+							<h1 className="featured-project-header-desktop">Featured Projects</h1>
+							<h2 className="featured-project-second-header-desktop">Some stuff I have created</h2>
+						</a>
 					</div>
-
 					{projects.map((project) => {
 						return (
 							<div key={project._id}>
@@ -189,6 +192,7 @@ const Home = ({ projects }) => {
 					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
+					<a id="third-mobile" name="third-mobile"></a>
 					<h1 className="featured-project-header-mobile">Featured Projects</h1>
 					{projects.map((project) => {
 						return (
