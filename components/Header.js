@@ -10,7 +10,7 @@ const Header = () => {
 				<div className="clip-path-arrow-down lg:clip-path-arrow-right w-[400px] lg:w-[500px]">
 					<Image src={mountain} />
 				</div>
-				<div className="w-[500px] md:w-[600px] lg:w-[600px] flex justify-center items-center flex-col mt-20 lg:mt-5">
+				<div className="w-[400px] md:w-[600px] lg:w-[600px] flex justify-center items-center flex-col mt-20 lg:mt-5">
 					{/* 	<h1 className="font-Rubik lg:text-xl text-lg leading-7 tracking-widest mb-5 bg-yellow p-2">Hi! I am</h1> */}
 					<h2 className="font-Rubik lg:text-6xl md:text-6xl text-4xl leading-normal p-4 text-center"><span className="lg:text-4xl text-2xl">Iam </span>Sara Carlstein</h2>
 					<h2 className="font-Rubik lg:text-6xl md:text-5xl text-2xl leading-normal p-4text-center">&</h2>

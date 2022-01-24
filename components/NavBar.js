@@ -140,7 +140,7 @@ const NavBar = () => {
 									to="second"
 									spy={true} smooth={true}
 									duration={500}
-									offset={40}
+									offset={-120}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 									onClick={() => setIsOpen(!isOpen)}
 								>
@@ -152,7 +152,7 @@ const NavBar = () => {
 									to="third-mobile"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-60}
+									offset={-100}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 									onClick={() => setIsOpen(!isOpen)}
 								>
