@@ -14,7 +14,7 @@ const Header = () => {
 				</div>
 				<div className="flex lg:justify-around md:justify-around items-center flex-col mt-5 lg:w-full md:w-full w-full">
 					{/* 	<h1 className="font-Rubik lg:text-xl text-lg leading-7 tracking-widest mb-5 bg-yellow p-2">Hi! I am</h1> */}
-					<h2 className="font-Rubik lg:text-6xl md:text-6xl text-3xl leading-normal mt-0 lg:w-full md:w-full lg:text-center md:text-center text-center"><span className="lg:text-4xl text-2xl">I'am </span>Sara Carlstein</h2>
+					<h2 className="font-Rubik lg:text-6xl md:text-6xl text-3xl leading-normal mt-0 lg:w-full md:w-full lg:text-center md:text-center text-center"><span className="lg:text-4xl text-2xl">Iam </span>Sara Carlstein</h2>
 					<h2 className="font-Rubik lg:text-6xl md:text-5xl text-2xl leading-normal lg:p-2 pb-2 lg:w-full md:w-full text-center">&</h2>
 					<h2 className="font-Rubik lg:text-4xl md:text-3xl text-2xl lg:leading-loose md:leading-normal text-center lg:w-full md:w-full">I like <span className="bg-yellow p-2">building</span> things for the <span>web</span></h2>
 				</div>
