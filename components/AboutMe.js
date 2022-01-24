@@ -6,7 +6,7 @@ const AboutMe = () => {
 
 	return (
 		<>
-			<section className="flex justify-center items-center flex-col mt-40 lg:mt-10 my-20">
+			<section className="flex justify-center items-center flex-col mt-40 lg:mt-0 my-20">
 				<div className="header-container">
 					<h1>About me</h1>
 					<h2>What I like doing all day</h2>
