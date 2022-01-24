@@ -54,6 +54,12 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 }
 
+@layer utilities {
+	.large-header {
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+}
+
  h1{
 	font-size: 24px;
   letter-spacing: 4px;
