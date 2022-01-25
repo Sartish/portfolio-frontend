@@ -14,7 +14,7 @@ const FooterMobile = () => {
 		<>
 			{isTabletOrMobile && (
 				<footer
-					class="shadow text-3xl text-white text-center
+					className="shadow text-3xl text-white text-center
 						fixed
 						inset-x-0
 						bottom-0
