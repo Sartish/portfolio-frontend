@@ -5,7 +5,8 @@ module.exports = {
 	],
 	theme: {
 		colors: {
-			'yellow': '#f8f2e1'
+			'yellow': '#f8f2e1',
+			'green': '#CFD7C0'
 		},
 		fontFamily: {
 			'Rubik': ['Rubik', 'sans-serif'],

@@ -12,10 +12,10 @@ const NavBar = () => {
 			<nav className="shadow-sm fixed w-full z-10 bg-yellow bg-opacity-80">
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
-						<div className="flex items-center  mx-20  justify-between w-full">
+						<div className="flex items-center  mx-10  justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0 ">
-								<h1 className=" font-bold text-xl cursor-pointer">
-									Stream<span className="text-blue-500">line</span>
+								<h1 className=" font-bold text-xl cursor-pointer p-[4px]">
+									S.<span className="">C</span>
 								</h1>
 							</div>
 							<div className="hidden md:block">
@@ -62,14 +62,14 @@ const NavBar = () => {
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type="button"
-								className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
+								className="inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-yellow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-yellow focus:ring-white"
 								aria-controls="mobile-menu"
 								aria-expanded="false"
 							>
 								<span className="sr-only">Open main menu</span>
 								{!isOpen ? (
 									<svg
-										className="block h-6 w-6"
+										className="block h-8 w-8"
 										xmlns="http://www.w3.org/2000/svg"
 										fill="none"
 										viewBox="0 0 24 24"

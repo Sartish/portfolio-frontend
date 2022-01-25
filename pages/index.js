@@ -248,9 +248,9 @@ const Home = ({ projects }) => {
 					{/* 				</ThemeProvider> */}
 				</section>
 			)}
+			<Experience />
 			<WritingCard />
 			<FooterMobile />
-			<Experience />
 		</div>
 	);
 };
