@@ -11,9 +11,11 @@ import Plant from "../components/Plant";
 import Skills from "../components/Skills";
 import NavBar from "../components/NavBar"
 import StickyBar from "../components/StickyBar";
+import FooterMobile from "../components/FooterMobile"
 import github from "../assets/github.svg";
 import newtab from "../assets/newtab.svg";
 import heart from "../assets/heart.svg";
+
 
 /* import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/Globalstyles";
@@ -189,6 +191,7 @@ const Home = ({ projects }) => {
 
 			{isTabletOrMobile && (
 				<section className="page-container-mobile">
+
 					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
@@ -238,12 +241,14 @@ const Home = ({ projects }) => {
 									</section>
 								</div>
 							</div>
+
 						);
 					})}
 					{/* 				</ThemeProvider> */}
-
 				</section>
 			)}
+			<WritingCard />
+			<FooterMobile />
 		</div>
 	);
 };

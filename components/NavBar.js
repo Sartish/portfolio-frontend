@@ -6,12 +6,10 @@ import React, { useState } from "react";
 
 
 const NavBar = () => {
-
-
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div>
-			<nav className="shadow-sm fixed w-full z-10">
+			<nav className="shadow-sm fixed w-full z-10 bg-yellow bg-opacity-80">
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
 						<div className="flex items-center  mx-20  justify-between w-full">
@@ -23,7 +21,7 @@ const NavBar = () => {
 							<div className="hidden md:block">
 								<div className="ml-10 flex items-baseline space-x-4">
 									<Link
-										to="first" spy={true} smooth={true} duration={500} offset={-80} activeClass="About">
+										to="first" spy={true} smooth={true} duration={500} offset={-80} activeclassname="About">
 										About
 
 									</Link>
@@ -32,21 +30,21 @@ const NavBar = () => {
 										Skills
 									</Link>
 									<Link
-										activeClass="About"
+										activeclassname="About"
 										to="third-desktop" spy={true} smooth={true} duration={500}
 										offset={-80}
 									>
 										Projects
 									</Link>
 									<Link
-										activeClass="About"
+										activeclassname="About"
 										to="fourth" spy={true} smooth={true} duration={500}
 										offset={-80}
 									>
 										Writings
 									</Link>
 									<Link
-										activeClass="contact"
+										activeclassname="contact"
 										to="third"
 										smooth={true}
 										offset={50}
@@ -120,11 +118,11 @@ const NavBar = () => {
 						<div className="md:hidden" id="mobile-menu">
 							<div
 								ref={ref}
-								className="bg-yellow px-2 pt-2 pb-3 space-y-1 sm:px-3"
+								className="bg-yellow bg-opacity-20 px-2 pt-2 pb-3 space-y-1 sm:px-3"
 							>
 								<Link
 									href="/home"
-									activeClass="home"
+									activeclassname="home"
 									to="first"
 									spy={true} smooth={true}
 									duration={500}
@@ -136,7 +134,7 @@ const NavBar = () => {
 								</Link>
 								<Link
 									href="/about"
-									activeClass="about"
+									activeclassname="about"
 									to="second"
 									spy={true} smooth={true}
 									duration={500}
@@ -148,7 +146,7 @@ const NavBar = () => {
 								</Link>
 								<Link
 									href="/work"
-									activeClass="work"
+									activeclassname="work"
 									to="third-mobile"
 									spy={true} smooth={true}
 									duration={500}
@@ -160,7 +158,7 @@ const NavBar = () => {
 								</Link>
 								<Link
 									href="/services"
-									activeClass="services"
+									activeclassname="services"
 									to="fourth"
 									spy={true} smooth={true}
 									duration={500}
@@ -173,7 +171,7 @@ const NavBar = () => {
 
 								<Link
 									href="/contact"
-									activeClass="work"
+									activeclassname="work"
 									to="work"
 									smooth={true}
 									offset={60}

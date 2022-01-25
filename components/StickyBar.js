@@ -16,7 +16,7 @@ const StickyBar = () => {
 		<>{isDesktopOrLaptop && (
 			<aside className="fixed w-full z-10 my-60 bg-red-500">
 				<div className="flex flex-row justify-between w-full">
-					<div classNme="flex flex-col w-full p-20">
+					<div classNameNme="flex flex-col w-full p-20">
 						<div className="p-5">
 							<Image src={codepen} />
 						</div>
