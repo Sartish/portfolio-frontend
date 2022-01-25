@@ -37,6 +37,12 @@ transform: rotate(0deg);
 }
 
 @layer utilities {
+  .polygon {
+clip-path: polygon(50% 0%, 100% 0, 100% 69%, 0 100%, 0 100%, 0% 60%, 0 0);
+  }
+}
+
+@layer utilities {
 	.email {
 	padding: 10px;
 	display: flex;
@@ -65,7 +71,7 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 /*ABOUT ME*/
 .header-container {
  margin-top: 0;
- margin-bottom: 50px;
+ margin-bottom: 40px;
  text-align: center;
 }
 
@@ -381,4 +387,23 @@ i{
     top: 90%;
     opacity: 0;
   }
+}
+
+
+
+.divider {
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }

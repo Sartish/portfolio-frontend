@@ -24,8 +24,9 @@ const FooterMobile = () => {
 						justify-center
 						bg-yellow
 						bg-opacity-80
+						items-center
 						">
-					<div className="flex flex-row justify-center mb-0">
+					<div className="flex flex-row justify-around mb-0 w-1/2">
 						<div className="pr-4 pt-2">
 							<Image src={codepen} />
 						</div>

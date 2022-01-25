@@ -6,6 +6,8 @@ const Header = () => {
 
 	return (
 		<div className="w-screen flex justify-center items-center">
+
+
 			<header className="w-full h-[500px] md:h-[500px] lg:h-1/2 flex flex-col lg:flex-row justify-between lg:justify-center items-center lg:items-start mt-[160px] mb-[50px] lg:mb-40 lg:pl-[60px] lg:pr-[45px]">
 				<div className="clip-path-arrow-down lg:clip-path-arrow-right w-[400px] lg:w-[500px]">
 					<Image src={mountain} />

@@ -15,6 +15,7 @@ import FooterMobile from "../components/FooterMobile"
 import github from "../assets/github.svg";
 import newtab from "../assets/newtab.svg";
 import heart from "../assets/heart.svg";
+import Experience from "../components/Experience"
 
 
 /* import { ThemeProvider } from "styled-components";
@@ -249,6 +250,7 @@ const Home = ({ projects }) => {
 			)}
 			<WritingCard />
 			<FooterMobile />
+			<Experience />
 		</div>
 	);
 };
