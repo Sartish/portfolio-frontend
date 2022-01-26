@@ -11,7 +11,7 @@ const Skills = () => {
 
 
 	return (
-		<>
+		<div className="">
 			<Head>
 				<title>My page title</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -22,7 +22,7 @@ const Skills = () => {
 					<h1>Skills & Tools</h1>
 					<h2>What I use to create</h2>
 				</HeaderContainer>
-				<IconWrapper className="grid grid-cols-3 md:grid-cols-8 content-center justify-center gap-10">
+				<IconWrapper className="grid grid-cols-3 md:grid-cols-4 items-center justify-items-center gap-12">
 					<StyledIcon>
 						<i className="devicon-nextjs-original"></i>
 						<IconText>Nextjs</IconText>
@@ -83,15 +83,24 @@ const Skills = () => {
 						<i className="devicon-sass-original"></i>
 						<IconText>SASS</IconText>
 					</StyledIcon>
+					<StyledIcon>
+						<i class="devicon-tailwindcss-original-wordmark"></i>
+						<IconText>Tailwind</IconText>
+					</StyledIcon>
 				</IconWrapper>
-				<More>
-					<h1>I also like...</h1>
+				<h2>I also like...</h2>
+				<More className="w-[90%] items-center justify-items-center p-20 grid grid-cols-3 md:grid-cols-4 content-center justify-center gap-10">
 					<p>sanity</p>
-					<p>tailwind</p>
-					<p>UX</p>
+					<p>shopify</p>
+					<p>UX/UI</p>
+					<p>design</p>
+					<p>content layout</p>
+					<p>UX/UI</p>
+					<p>design</p>
+					<p>content layout</p>
 				</More>
 			</SkillsContainer>
-		</>
+		</div>
 	);
 };
 
