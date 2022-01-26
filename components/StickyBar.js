@@ -30,7 +30,7 @@ const StickyBar = () => {
 							<Image src={medium} />
 						</div>
 					</div>
-					<p className="email font-Lora">carlstein.sara@gmail.com</p>
+					<p className="email">carlstein.sara@gmail.com</p>
 				</div>
 			</aside>
 		)}

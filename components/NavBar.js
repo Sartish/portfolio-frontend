@@ -14,19 +14,18 @@ const NavBar = () => {
 					<div className="flex items-center h-20 w-full">
 						<div className="flex items-center  mx-10  justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0 ">
-								<h1 className="font-Lora text-xl cursor-pointer p-[4px] lowercase">
+								<h1 className="font-Lora text-[35px] cursor-pointer p-[4px] lowercase">
 									S.<span className="">C</span>
 								</h1>
 							</div>
 							<div className="hidden md:block">
-								<div className="ml-10 flex items-baseline space-x-4 font-Poppins font-bold uppercase leading-12 tracking-wide">
+								<div className="cursor-pointer ml-10 flex items-baseline space-x-4 font-Poppins font-bold uppercase leading-12 tracking-wide">
 									<Link
-										to="first" spy={true} smooth={true} duration={500} offset={-80} activeclassname="About">
+										to="about" spy={true} smooth={true} duration={500} offset={-80} activeclassname="About">
 										About
-
 									</Link>
 									<Link
-										to="second" spy={true} smooth={true} duration={500} offset={-80}>
+										to="skills" spy={true} smooth={true} duration={500} offset={-80}>
 										Skills
 									</Link>
 									<Link
@@ -38,21 +37,25 @@ const NavBar = () => {
 									</Link>
 									<Link
 										activeclassname="About"
-										to="fourth" spy={true} smooth={true} duration={500}
+										to="writings"
+										spy={true}
+										smooth={true}
+										duration={500}
 										offset={-80}
 									>
 										Writings
 									</Link>
 									<Link
-										activeclassname="contact"
-										to="third"
+										activeclassname="About"
+										to="experience"
+										spy={true}
 										smooth={true}
-										offset={50}
 										duration={500}
-										className="cursor-pointer bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-black"
+										offset={-80}
 									>
-										Contact
+										Experience
 									</Link>
+
 								</div>
 							</div>
 						</div>
@@ -123,7 +126,7 @@ const NavBar = () => {
 								<Link
 									href="/home"
 									activeclassname="home"
-									to="first"
+									to="about"
 									spy={true} smooth={true}
 									duration={500}
 									offset={40}
@@ -135,7 +138,7 @@ const NavBar = () => {
 								<Link
 									href="/about"
 									activeclassname="about"
-									to="second"
+									to="skills"
 									spy={true} smooth={true}
 									duration={500}
 									offset={-120}
@@ -159,7 +162,7 @@ const NavBar = () => {
 								<Link
 									href="/services"
 									activeclassname="services"
-									to="fourth"
+									to="writings"
 									spy={true} smooth={true}
 									duration={500}
 									offset={60}
@@ -172,13 +175,13 @@ const NavBar = () => {
 								<Link
 									href="/contact"
 									activeclassname="work"
-									to="work"
+									to="experience"
 									smooth={true}
 									offset={60}
 									duration={500}
-									className="font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 								>
-									Contact
+									Experience
 								</Link>
 							</div>
 						</div>

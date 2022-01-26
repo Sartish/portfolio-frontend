@@ -57,8 +57,10 @@ const Home = ({ projects }) => {
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<div className="project-header-container">
 						<a id="third-desktop" name="third-desktop">
-							<h1 className="featured-project-header-desktop">Featured Projects</h1>
-							<h2 className="featured-project-second-header-desktop">Some stuff I have created</h2>
+							<div className="header-container">
+								<h1>featured projects</h1>
+								<h2>some stuff I have created</h2>
+							</div>
 						</a>
 					</div>
 					{projects.map((project) => {
@@ -184,7 +186,10 @@ const Home = ({ projects }) => {
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<a id="third-mobile" name="third-mobile"></a>
-					<h1 className="featured-project-header-mobile">Featured Projects</h1>
+					<div className="header-container">
+						<h1>featured projects</h1>
+						<h2>some stuff I have created</h2>
+					</div>
 					{projects.map((project) => {
 						return (
 							<div key={project._id}>
@@ -229,11 +234,13 @@ const Home = ({ projects }) => {
 					{/* 				</ThemeProvider> */}
 				</section>
 			)}
+			<a id="experience" name="experience"></a>
 			<Experience />
-			<a id="second" name="second"></a>
+			<a id="skills" name="skille"></a>
 			<Skills />
-			<a id="first" name="first"></a>
+			<a id="about" name="about"></a>
 			<AboutMe />
+			<a id="writings" name="writings"></a>
 			<WritingCard />
 			<FooterMobile />
 		</div>

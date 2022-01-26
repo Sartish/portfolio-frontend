@@ -57,9 +57,10 @@ clip-path: polygon(50% 0%, 100% 0, 100% 100%, 49% 82%, 52% 82%, 0 98%, 0 0);
 	width: 5px;
 	letter-spacing: 4px;
 	line-height: 20px;
-	font-size: 18px;
+	font-size: 1px;
 	transform-origin: 0 0;
 	transform: rotate(90deg);
+	font-family: "Lora", sans-serif;
 }
 }
 
@@ -79,7 +80,6 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 /*ABOUT ME*/
 .header-container {
  margin-top: 0;
- margin-bottom: 40px;
  text-align: center;
 }
 
@@ -97,7 +97,7 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   letter-spacing: 4px;
   line-height: 20px;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 600;
 	text-align: center;
  }
 
@@ -281,23 +281,23 @@ flex-direction: column;
 }
 
 .project-image-mobile{
-	width: 600px;
+	width: 300px;
 }
 
 
 .project-title-mobile {
 	color: black;
-		font-family: "Lora", sans-serif;
+	font-family: "Lora", sans-serif;
 	font-size: 22px;
 	text-align: left;
-	width: 100%;
+	width: 90%;
 }
 
 .project-text-mobile {
 	letter-spacing: 2px;
   line-height: 28px;
 	font-size: 14px;
-	width: 100%;
+	width: 90%;
 }
 
 .social-media-mobile{
@@ -420,4 +420,58 @@ i{
 	width: 90%;
 	height: 1px;
 	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+
+
+html body [data-ca3_iconfont="ETmodules"]::before {
+    font-family: "ETmodules";
+}
+[data-ca3_icon]::before {
+    font-weight: normal;
+    content: attr(data-ca3_icon);
+}
+
+.ca3-scroll-down-arrow {
+	background-image: url(../assets/arrow50.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+	height: 60px;
+	width: 80px;
+	margin: 20px 0 0 -40px;
+	line-height: 60px;
+	position: absolute;
+	left: 51%;
+	color: black;
+	text-align: center;
+	font-size: 70px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
 }

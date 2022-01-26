@@ -19,8 +19,8 @@ const Skills = () => {
 			</Head>
 			<SkillsContainer>
 				<HeaderContainer>
-					<HeaderOne>Skills & Tools</HeaderOne>
-					<HeaderTwo>What I use to create</HeaderTwo>
+					<h1>Skills & Tools</h1>
+					<h2>What I use to create</h2>
 				</HeaderContainer>
 				<IconWrapper className="grid grid-cols-3 md:grid-cols-8 content-center justify-center gap-10">
 					<StyledIcon>
@@ -108,8 +108,8 @@ const SkillsContainer = styled.div`
 `;
 const HeaderContainer = styled.div`
 	margin-top: 0;
-	margin-bottom: 50px;
-	 text-align: center;
+ margin-bottom: 40px;
+ text-align: center;
 `;
 const HeaderOne = styled.h1`
   font-size: 30px;
