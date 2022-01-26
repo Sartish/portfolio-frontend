@@ -11,7 +11,7 @@ const Skills = () => {
 
 
 	return (
-		<div className="">
+		<div>
 			<Head>
 				<title>My page title</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -84,7 +84,7 @@ const Skills = () => {
 						<IconText>SASS</IconText>
 					</StyledIcon>
 					<StyledIcon>
-						<i class="devicon-tailwindcss-original-wordmark"></i>
+						<i className="devicon-tailwindcss-original-wordmark"></i>
 						<IconText>Tailwind</IconText>
 					</StyledIcon>
 				</IconWrapper>
