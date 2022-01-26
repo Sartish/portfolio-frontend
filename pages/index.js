@@ -16,6 +16,7 @@ import github from "../assets/github.svg";
 import newtab from "../assets/newtab.svg";
 import heart from "../assets/heart.svg";
 import Experience from "../components/Experience"
+import HeaderDesktop from "../components/HeaderDesktop"
 
 
 /* import { ThemeProvider } from "styled-components";
@@ -43,10 +44,12 @@ const Home = ({ projects }) => {
 				<title>My page title</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
+				<link rel="preconnect" href="https://fonts.googleapis.com"></link>
+				<link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap" rel="stylesheet"></link>
 			</Head>
 			<NavBar />
 			<StickyBar />
-			<Header />
+			<HeaderDesktop />
 			<a id="first" name="first"></a>
 			<AboutMe />
 			<a id="second" name="second"></a>
