@@ -84,6 +84,12 @@ const Skills = () => {
 						<IconText>SASS</IconText>
 					</StyledIcon>
 				</IconWrapper>
+				<More>
+					<h1>I also like...</h1>
+					<p>sanity</p>
+					<p>tailwind</p>
+					<p>UX</p>
+				</More>
 			</SkillsContainer>
 		</>
 	);
@@ -136,3 +142,6 @@ const IconText = styled.h2`
 	 padding: 3px;
 `;
 
+const More = styled.div`
+
+`;

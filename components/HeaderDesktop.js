@@ -9,7 +9,7 @@ const HeaderDesktop = () => {
 					<Image src={flight} />
 				</div>
 				<div className="flex justify-center items-center flex-col lg:min-w-fit z-10">
-					<h1 className="text-center font-Lora xl:text-[100px] lg:text-[60px] md:text-[50px] text-[40px] tracking-wide lg:ml-[-200px] xl:ml[-100] md:ml-[0px] lg:mb-[40px] mb-[5px]">Sara Carlstein</h1>
+					<h1 className="text-center font-Lora xl:text-[100px] lg:text-[60px] md:text-[50px] text-[40px] tracking-wide lg:ml-[-200px] xl:ml[-100] md:ml-[0px] lg:mb-[40px] mb-[5px] lowercase">Sara Carlstein</h1>
 					<h1 className="text-center font-Poppins lg:ml-[-50px] md:ml-[0px] leading-12 tracking-wide text-[20px] md:text-[30px] lg:text-[30px] uppercase">Building things on the web</h1>
 				</div>
 			</div>

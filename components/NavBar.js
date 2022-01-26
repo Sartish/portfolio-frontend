@@ -14,12 +14,12 @@ const NavBar = () => {
 					<div className="flex items-center h-20 w-full">
 						<div className="flex items-center  mx-10  justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0 ">
-								<h1 className="font-Lora text-xl cursor-pointer p-[4px]">
+								<h1 className="font-Lora text-xl cursor-pointer p-[4px] lowercase">
 									S.<span className="">C</span>
 								</h1>
 							</div>
 							<div className="hidden md:block">
-								<div className="ml-10 flex items-baseline space-x-4 font-Poppins font-bold">
+								<div className="ml-10 flex items-baseline space-x-4 font-Poppins font-bold uppercase leading-12 tracking-wide">
 									<Link
 										to="first" spy={true} smooth={true} duration={500} offset={-80} activeclassname="About">
 										About
@@ -127,7 +127,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={40}
-									className="font-Poppins font-bold cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									About
@@ -139,7 +139,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-120}
-									className="font-Poppins font-bold cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Skills
@@ -151,7 +151,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-100}
-									className="font-Poppins font-bold cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="font-Poppins font-bold  uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Projects
@@ -163,7 +163,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={60}
-									className="font-Poppins font-bold cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Writings
@@ -176,7 +176,7 @@ const NavBar = () => {
 									smooth={true}
 									offset={60}
 									duration={500}
-									className="font-Poppins font-bold cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 								>
 									Contact
 								</Link>

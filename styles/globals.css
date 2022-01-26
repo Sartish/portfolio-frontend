@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +11,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Rubik', sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -86,15 +85,20 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 
  h1{
 	font-size: 30px;
-  letter-spacing: 4px;
-  line-height: 50px;
+  letter-spacing: 2px;
+  line-height: 40px;
+	font-family: "Lora", sans-serif;
+	text-transform: lowercase;
  }
 
   h2{
   font-size: 14px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
  }
 
 a {
@@ -110,10 +114,11 @@ a {
 
 
 p {
-	font-family: 'Rubik', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 14px;
 	letter-spacing: 2px;
   line-height: 30px;
+	font-weight: 900;
 }
 
 
@@ -153,12 +158,12 @@ flex-direction: row;
 	font-size: 35px;
 	letter-spacing: 4px;
   line-height: 50px;
-	font-family: "Rubik", sans-serif;
+	font-family: "Lora", sans-serif;
 }
 
 .featured-project-second-header-desktop {
 	font-size: 14px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
 	padding: 10px;
@@ -172,7 +177,7 @@ flex-direction: row;
 }
 .project-title{
 	color: black;
-	font-family: 'Rubik', sans-serif;
+	font-family: "Lora", sans-serif;
 	font-size: 28px;
 	text-align: left;
 	width: 95%;
@@ -190,7 +195,7 @@ flex-direction: row;
 	padding: 3px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	font-family: 'Rubik', sans-serif;
+		font-family: "Poppins", sans-serif;
 	letter-spacing: 2px;
   line-height: 20px;
 	font-size: 12px;
@@ -201,7 +206,7 @@ flex-direction: row;
 	padding: 10px;
 	text-align: center;
 	background-color: #f8f2e1;
-	font-family: 'Rubik', sans-serif;
+		font-family: "Poppins", sans-serif;
 	font-weight: bold;
 }
 
@@ -248,7 +253,7 @@ flex-direction: row;
 	font-size: 30px;
   letter-spacing: 4px;
   line-height: 50px;
-	font-family: "Rubik", sans-serif;
+		font-family: "Lora", sans-serif;
 	padding: 10px;
 }
 
@@ -282,7 +287,7 @@ flex-direction: column;
 
 .project-title-mobile {
 	color: black;
-	font-family: 'Rubik', sans-serif;
+		font-family: "Lora", sans-serif;
 	font-size: 22px;
 	text-align: left;
 	width: 100%;
@@ -309,7 +314,7 @@ flex-direction: column;
 	padding: 3px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	font-family: 'Rubik', sans-serif;
+	font-family: "Lora", sans-serif;
 	letter-spacing: 2px;
   line-height: 20px;
 	font-size: 12px;
@@ -321,7 +326,7 @@ flex-direction: column;
 	padding: 10px;
 	text-align: center;
 	background-color: #f8f2e1;
-	font-family: 'Rubik', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: bold;
 }
 

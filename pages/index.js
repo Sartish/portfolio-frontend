@@ -50,10 +50,6 @@ const Home = ({ projects }) => {
 			<NavBar />
 			<StickyBar />
 			<HeaderDesktop />
-			<a id="first" name="first"></a>
-			<AboutMe />
-			<a id="second" name="second"></a>
-			<Skills />
 			{isDesktopOrLaptop && (
 				<section>
 					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
@@ -100,20 +96,14 @@ const Home = ({ projects }) => {
 											<p className="project-text">
 												{project.text}
 												<div className="social-media-desktop">
-													<div className="social-media-icon-left">
-														<a className="link-new-link" href={project.linkcode}>
-															<Image className="new-link-icon" src={heart} width={30}
-																height={40} />
-														</a>
-													</div>
 													<div className="social-media-icons-right">
 														<a className="link-github" href={project.linkcode}>
-															<Image className="github-icon" src={github} width={30}
-																height={40} />
+															<Image className="github-icon" src={github} width={25}
+																height={30} />
 														</a>
 														<a className="link-new-link" href={project.linkcode}>
-															<Image className="new-link-icon" src={newtab} width={30}
-																height={40} />
+															<Image className="new-link-icon" src={newtab} width={25}
+																height={30} />
 														</a>
 													</div>
 												</div>
@@ -155,20 +145,14 @@ const Home = ({ projects }) => {
 											<p className="project-text">
 												{project.text}
 												<div className="social-media-desktop">
-													<div className="social-media-icon-left">
-														<a className="link-new-link" href={project.linkcode}>
-															<Image className="new-link-icon" src={heart} width={30}
-																height={40} />
-														</a>
-													</div>
 													<div className="social-media-icons-right">
 														<a className="link-github" href={project.linkcode}>
-															<Image className="github-icon" src={github} width={30}
-																height={40} />
+															<Image className="github-icon" src={github} width={25}
+																height={30} />
 														</a>
 														<a className="link-new-link" href={project.linkcode}>
-															<Image className="new-link-icon" src={newtab} width={30}
-																height={40} />
+															<Image className="new-link-icon" src={newtab} width={25}
+																height={30} />
 														</a>
 													</div>
 												</div>
@@ -214,20 +198,14 @@ const Home = ({ projects }) => {
 										<p className="project-text-mobile">
 											{project.text}
 											<div className="social-media-mobile">
-												<div className="social-media-icon-left">
-													<a className="link-new-link" href={project.linkcode}>
-														<Image className="new-link-icon" src={heart} width={30}
-															height={40} />
-													</a>
-												</div>
 												<div className="social-media-icons-right">
 													<a className="link-github" href={project.linkcode}>
-														<Image className="github-icon" src={github} width={30}
-															height={40} />
+														<Image className="github-icon" src={github} width={25}
+															height={30} />
 													</a>
 													<a className="link-new-link" href={project.linkcode}>
-														<Image className="new-link-icon" src={newtab} width={30}
-															height={40} />
+														<Image className="new-link-icon" src={newtab} width={25}
+															height={30} />
 													</a>
 												</div>
 											</div>
@@ -252,6 +230,10 @@ const Home = ({ projects }) => {
 				</section>
 			)}
 			<Experience />
+			<a id="second" name="second"></a>
+			<Skills />
+			<a id="first" name="first"></a>
+			<AboutMe />
 			<WritingCard />
 			<FooterMobile />
 		</div>
