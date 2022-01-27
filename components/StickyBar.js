@@ -1,10 +1,9 @@
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import linkedin from "../assets/linkedin.svg";
-import medium from "../assets/medium.svg";
 import github from "../assets/github-side.svg";
 import codepen from "../assets/codepen.svg";
-import instagram from "../assets/instagram.svg";
+import instagram from "../assets/insta.svg";
 
 const StickyBar = () => {
 
