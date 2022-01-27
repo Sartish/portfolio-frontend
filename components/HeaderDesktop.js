@@ -3,9 +3,9 @@ import Image from "next/image";
 import flight from "../assets/compressednz.png";
 const HeaderDesktop = () => {
 	return (
-		<header className="w-full h-screen lg:h-screen xl:h-[700px] md:h-[800px] flex justify-center items-center flex-col ">
+		<header className="w-full h-[640px] lg:h-screen xl:h-[700px] md:h-[800px] flex justify-center items-center flex-col ">
 			<div className="flex justify-center items-center flex-col lg:flex-row md:flex-col lg:mr-20 lg:ml-20 md:ml-20 md:mr-20 w-[90%]">
-				<div className="flex justify-center items-center lg:w-[800px] md:w-[600px] w-[400px] z-0 pb-5">
+				<div className="flex justify-center items-center lg:w-[800px] md:w-[600px] w-[400px] z-0 p-5">
 					<Image src={flight} />
 				</div>
 				<div className="flex justify-center items-center flex-col lg:min-w-fit z-10">
