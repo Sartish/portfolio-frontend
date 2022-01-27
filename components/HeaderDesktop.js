@@ -13,7 +13,7 @@ const HeaderDesktop = () => {
 					<h1 className="text-center font-Poppins lg:ml-[-40px] md:ml-[0px] leading-12 tracking-wide text-[20px] md:text-[25px] lg:text-[30px] uppercase">Building things on the web</h1>
 				</div>
 			</div>
-			<h1 className="text-center font-Lora text-[14px] md:text-[18px] mt-5 lg:mt-[20px] lg:mb-[150px]">using my passion to help you pursue yours
+			<h1 className="text-center font-Lora text-[14px] md:text-[18px] mt-10 lg:mt-[20px] lg:mb-[150px]">using my passion to help you pursue yours
 				<h2 className="text-center uppercase font-Poppins font-semibold text-sm">learn more</h2>
 				<a className="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
 			</h1>
