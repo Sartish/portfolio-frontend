@@ -57,10 +57,11 @@ clip-path: polygon(50% 0%, 100% 0, 100% 100%, 49% 82%, 52% 82%, 0 98%, 0 0);
 	width: 5px;
 	letter-spacing: 4px;
 	line-height: 20px;
-	font-size: 1px;
+	font-size: 14px;
 	transform-origin: 0 0;
 	transform: rotate(90deg);
 	font-family: "Lora", sans-serif;
+	margin-left: 2px
 }
 }
 

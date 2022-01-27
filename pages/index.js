@@ -18,7 +18,6 @@ import heart from "../assets/heart.svg";
 import Experience from "../components/Experience"
 import HeaderDesktop from "../components/HeaderDesktop"
 
-
 /* import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/Globalstyles";
 import { lightTheme, darkTheme } from "../components/Themes" */
@@ -49,6 +48,7 @@ const Home = ({ projects }) => {
 			</Head>
 			<NavBar />
 			<StickyBar />
+			<a id="home" name="home"></a>
 			<HeaderDesktop />
 			{isDesktopOrLaptop && (
 				<section>

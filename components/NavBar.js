@@ -9,29 +9,56 @@ const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div>
-			<nav className="shadow-sm fixed w-full z-10">
+			<nav className="shadow-sm fixed lg:static w-full z-10 lg:z-0">
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
 						<div className="flex items-center  mx-10  justify-between w-full">
 							<div className="flex justify-center items-center flex-shrink-0 ">
-								<h1 className="font-Lora text-[35px] cursor-pointer p-[4px] lowercase">
-									S.<span className="">C</span>
-								</h1>
+								<Link
+									to="home"
+									spy={true}
+									smooth={true}
+									duration={500}
+									offset={-80}
+									activeclassname="About"
+									className="hover:opacity-50"
+								>
+									<h1 className="font-Lora text-[30px] cursor-pointer p-[4px] lowercase">
+										S.<span className="">C</span>
+									</h1>
+								</Link>
 							</div>
 							<div className="hidden md:block">
-								<div className="cursor-pointer ml-10 flex items-baseline space-x-4 font-Poppins font-bold uppercase leading-12 tracking-wide">
+								<div className="cursor-pointer text-sm ml-10 flex items-baseline space-x-4 font-Poppins font-semibold uppercase leading-12 tracking-wide">
 									<Link
-										to="about" spy={true} smooth={true} duration={500} offset={-80} activeclassname="About">
+										to="about"
+										spy={true}
+										smooth={true}
+										duration={500}
+										offset={-80}
+										activeclassname="About"
+										className="hover:opacity-50"
+									>
 										About
 									</Link>
 									<Link
-										to="skills" spy={true} smooth={true} duration={500} offset={-80}>
+										to="skills"
+										spy={true}
+										smooth={true}
+										duration={500}
+										offset={-80}
+										className="hover:opacity-50"
+									>
 										Skills
 									</Link>
 									<Link
 										activeclassname="About"
-										to="third-desktop" spy={true} smooth={true} duration={500}
+										to="third-desktop"
+										spy={true}
+										smooth={true}
+										duration={500}
 										offset={-80}
+										className="hover:opacity-50"
 									>
 										Projects
 									</Link>
@@ -42,6 +69,7 @@ const NavBar = () => {
 										smooth={true}
 										duration={500}
 										offset={-80}
+										className="hover:opacity-50"
 									>
 										Writings
 									</Link>
@@ -52,6 +80,7 @@ const NavBar = () => {
 										smooth={true}
 										duration={500}
 										offset={-80}
+										className="hover:opacity-50"
 									>
 										Experience
 									</Link>
@@ -124,13 +153,25 @@ const NavBar = () => {
 								className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
 							>
 								<Link
+									href="/services"
+									activeclassname="services"
+									to="home"
+									spy={true} smooth={true}
+									duration={500}
+									offset={-90}
+									className="hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									onClick={() => setIsOpen(!isOpen)}
+								>
+									Home
+								</Link>
+								<Link
 									href="/home"
 									activeclassname="home"
 									to="about"
 									spy={true} smooth={true}
 									duration={500}
-									offset={40}
-									className="font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									offset={-100}
+									className="hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									About
@@ -142,7 +183,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-120}
-									className="font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Skills
@@ -154,7 +195,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-100}
-									className="font-Poppins font-bold  uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="hover:opacity-50 font-Poppins font-bold  uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Projects
@@ -165,21 +206,22 @@ const NavBar = () => {
 									to="writings"
 									spy={true} smooth={true}
 									duration={500}
-									offset={60}
-									className="font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									offset={-90}
+									className="hover:opacity-50 font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Writings
 								</Link>
 
 								<Link
-									href="/contact"
-									activeclassname="work"
+									href="/services"
+									activeclassname="services"
 									to="experience"
-									smooth={true}
-									offset={60}
+									spy={true} smooth={true}
 									duration={500}
-									className="font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									offset={-90}
+									className="hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									onClick={() => setIsOpen(!isOpen)}
 								>
 									Experience
 								</Link>
