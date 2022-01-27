@@ -4,8 +4,8 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const Experience = () => {
 	return (
-		<>
-			<div className="header-container">
+		<div className="mt-20">
+			<div className="header-container pb-10">
 				<h1>Experience</h1>
 				<h2>What has led me to this moment</h2>
 			</div>
@@ -95,7 +95,7 @@ const Experience = () => {
 					</p>
 				</VerticalTimelineElement>
 			</VerticalTimeline>
-		</>
+		</div>
 	)
 
 }

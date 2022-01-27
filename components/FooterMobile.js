@@ -48,7 +48,6 @@ const FooterMobile = () => {
 							</a>
 						</div>
 					</div>
-					<p className="text-black">carlstein.sara@gmail.com</p>
 				</footer>
 			)}
 		</>

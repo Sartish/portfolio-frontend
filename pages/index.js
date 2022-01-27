@@ -186,7 +186,7 @@ const Home = ({ projects }) => {
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<a id="third-mobile" name="third-mobile"></a>
-					<div className="header-container">
+					<div className="header-container pb-10 mt-0">
 						<h1>featured projects</h1>
 						<h2>some stuff I have created</h2>
 					</div>
