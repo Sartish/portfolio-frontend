@@ -2,7 +2,7 @@
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import linkedin from "../assets/linkedin.svg";
-import medium from "../assets/medium.svg";
+import instagram from "../assets/instagram.svg";
 import github from "../assets/github-side.svg";
 import codepen from "../assets/codepen.svg";
 
@@ -28,19 +28,27 @@ const FooterMobile = () => {
 						">
 					<div className="flex flex-row justify-around mb-0 w-1/2">
 						<div className="pr-4 pt-2">
-							<Image src={codepen} />
+							<a href="https://codepen.io/sartish">
+								<Image src={codepen} />
+							</a>
 						</div>
 						<div className="pr-4 pt-2">
-							<Image src={github} />
+							<a href="https://github.com/Sartish">
+								<Image src={github} />
+							</a>
 						</div>
 						<div className="pr-4 pt-2">
-							<Image src={linkedin} />
+							<a href="https://www.linkedin.com/in/sara-carlstein-532b2737/">
+								<Image src={linkedin} />
+							</a>
 						</div>
 						<div className="pr-4 pt-2">
-							<Image src={medium} />
+							<a href="https://www.instagram.com/saritacarlstein/">
+								<Image src={instagram} />
+							</a>
 						</div>
 					</div>
-					<p>carlstein.sara@gmail.com</p>
+					<p className="text-black">carlstein.sara@gmail.com</p>
 				</footer>
 			)}
 		</>

@@ -4,6 +4,7 @@ import linkedin from "../assets/linkedin.svg";
 import medium from "../assets/medium.svg";
 import github from "../assets/github-side.svg";
 import codepen from "../assets/codepen.svg";
+import instagram from "../assets/instagram.svg";
 
 const StickyBar = () => {
 
@@ -17,17 +18,25 @@ const StickyBar = () => {
 			<aside className="fixed w-full z-10 my-60">
 				<div className="flex flex-row justify-between w-full">
 					<div classNameNme="flex flex-col w-full p-20">
-						<div className="p-5">
-							<Image src={codepen} />
+						<div className="p-5 cursor-pointer">
+							<a href="https://codepen.io/sartish">
+								<Image src={codepen} />
+							</a>
 						</div>
 						<div className="p-5">
-							<Image src={github} />
+							<a href="https://github.com/Sartish">
+								<Image src={github} />
+							</a>
 						</div>
 						<div className="p-5">
-							<Image src={linkedin} />
+							<a href="https://www.linkedin.com/in/sara-carlstein-532b2737/">
+								<Image src={linkedin} />
+							</a>
 						</div>
 						<div className="p-5">
-							<Image src={medium} />
+							<a href="https://www.instagram.com/saritacarlstein/">
+								<Image src={instagram} />
+							</a>
 						</div>
 					</div>
 					<p className="email">carlstein.sara@gmail.com</p>

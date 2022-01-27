@@ -80,8 +80,9 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 
 /*ABOUT ME*/
 .header-container {
- margin-top: 0;
+ margin-top: 30px;
  text-align: center;
+ padding: 30px;
 }
 
  h1{
@@ -113,13 +114,17 @@ a {
 }
 
 
+.vertical-timeline-element-content p {
+	font-weight: 900;
+}
 
 p {
 	font-family: "Poppins", sans-serif;
 	font-size: 14px;
 	letter-spacing: 2px;
   line-height: 30px;
-	font-weight: 900;
+	font-weight: bold;
+	color: black;
 }
 
 
@@ -134,7 +139,6 @@ display: flex;
 justify-content: center; 
 align-items: center;
 flex-direction: column;
-margin-top: 50px;
 }
 
 .project-container-desktop {
@@ -214,7 +218,6 @@ flex-direction: row;
 .project-section-desktop{
 	display: flex;  
 	flex-direction: row; 
-	padding: 50px;
 }
 
 
@@ -249,14 +252,6 @@ flex-direction: row;
 
 /* MOBILE DEVISE STYLING GOES HERE */
 
-.featured-project-header-mobile{
-	text-align: center;
-	font-size: 30px;
-  letter-spacing: 4px;
-  line-height: 50px;
-		font-family: "Lora", sans-serif;
-	padding: 10px;
-}
 
 .page-container-mobile {
 	display: flex; 
@@ -279,10 +274,12 @@ flex-direction: column;
 	flex-direction: column; 
 	justify-content: center;
 	align-items: center;
+	width: 80%;
 }
 
+
 .project-image-mobile{
-	width: 300px;
+
 }
 
 

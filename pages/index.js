@@ -196,7 +196,7 @@ const Home = ({ projects }) => {
 								<div className="project-container-mobile">
 									<section className="project-section-mobile">
 										<img
-											className="project-image-mobile"
+											className="w-[300px] md:w-[400px]"
 											src={urlFor(project.image)}
 										/>
 										<div className="project-title-mobile">{project.title}</div>

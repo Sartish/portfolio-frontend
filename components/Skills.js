@@ -11,7 +11,7 @@ const Skills = () => {
 
 
 	return (
-		<div>
+		<div className="mt-20">
 			<Head>
 				<title>My page title</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -83,18 +83,14 @@ const Skills = () => {
 						<i className="devicon-sass-original"></i>
 						<IconText>SASS</IconText>
 					</StyledIcon>
-					<StyledIcon>
-						<i className="devicon-tailwindcss-original-wordmark"></i>
-						<IconText>Tailwind</IconText>
-					</StyledIcon>
 				</IconWrapper>
-				<h2>I also like...</h2>
-				<More className="w-[90%] items-center justify-items-center p-20 grid grid-cols-3 md:grid-cols-4 content-center justify-center gap-10">
+				<HeaderTwo>I also like...</HeaderTwo>
+				<More className="w-[90%] items-center justify-items-center p-20 grid grid-cols-2 md:grid-cols-4 content-center justify-center gap-10">
 					<p>sanity</p>
 					<p>shopify</p>
 					<p>UX/UI</p>
 					<p>design</p>
-					<p>content layout</p>
+					<p>Tailwind</p>
 					<p>UX/UI</p>
 					<p>design</p>
 					<p>content layout</p>
@@ -116,21 +112,19 @@ const SkillsContainer = styled.div`
 	margin-bottom: 30px;
 `;
 const HeaderContainer = styled.div`
-	margin-top: 0;
+margin-top: 0;
  margin-bottom: 40px;
  text-align: center;
 `;
-const HeaderOne = styled.h1`
-  font-size: 30px;
-  letter-spacing: 4px;
-  line-height: 50px;
-`;
 const HeaderTwo = styled.h2`
-  font-size: 14px;
-  font-family: "Rubik", sans-serif;
+	font-size: 14px;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 4px;
   line-height: 20px;
-	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 25px;
 `;
 
 const IconWrapper = styled.div`

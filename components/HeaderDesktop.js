@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import flight from "../assets/nznewsize.png";
+import flight from "../assets/compressednz.png";
 const HeaderDesktop = () => {
 	return (
 		<header className="w-full h-screen lg:h-[600px] xl:h-[700px] md:h-[800px] flex justify-center items-center flex-col ">
