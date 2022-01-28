@@ -17,6 +17,7 @@ import newtab from "../assets/newtab.svg";
 import heart from "../assets/heart.svg";
 import Experience from "../components/Experience"
 import HeaderDesktop from "../components/HeaderDesktop"
+import Contact from "../components/Contact"
 
 
 /* import { ThemeProvider } from "styled-components";
@@ -243,6 +244,7 @@ const Home = ({ projects }) => {
 			<AboutMe />
 			<a id="writings" name="writings"></a>
 			<WritingCard />
+			<Contact />
 			<FooterMobile />
 		</div>
 	);

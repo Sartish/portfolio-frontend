@@ -10,7 +10,7 @@ const WritingCard = () => {
 				<h1>Writings</h1>
 				<h2>Some of my writings</h2>
 			</div>
-			<div className="width-[90%] pr-20 pl-20 pb-20 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5 w-[90%] items-center justify-items-center">
+			<div className="width-[90%] pb-20 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5 w-[90%] items-center justify-items-center">
 				<div className="rounded overflow-hidden shadow-lg">
 					<div className="w-full">
 						<Image src={articleonepic} alt="Mountain" />
