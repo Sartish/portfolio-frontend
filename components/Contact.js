@@ -30,7 +30,7 @@ export const Contact = () => {
 				className="w-[90%]">
 				<div className="flex flex-wrap -mx-3 mb-6">
 					<div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-						<label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+						<label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
 							First Name
 						</label>
 						<input
@@ -42,7 +42,7 @@ export const Contact = () => {
 						/>
 					</div>
 					<div className="w-full md:w-1/2 px-3">
-						<label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+						<label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
 							Last Name
 						</label>
 						<input
@@ -56,7 +56,7 @@ export const Contact = () => {
 				</div>
 				<div className="flex flex-wrap -mx-3 mb-6">
 					<div className="w-full px-3">
-						<label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">Email</label>
+						<label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Email</label>
 						<input
 							type="email"
 							name="user_email"
@@ -69,7 +69,7 @@ export const Contact = () => {
 
 				<div className="flex flex-wrap -mx-3 mb-6">
 					<div className="w-full px-3">
-						<label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">Message</label>
+						<label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Message</label>
 						<textarea
 							name="message"
 							value={message}
