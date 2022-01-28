@@ -18,6 +18,7 @@ import heart from "../assets/heart.svg";
 import Experience from "../components/Experience"
 import HeaderDesktop from "../components/HeaderDesktop"
 import Contact from "../components/Contact"
+import CreatedBy from "../components/CreatedBy"
 
 
 /* import { ThemeProvider } from "styled-components";
@@ -245,6 +246,7 @@ const Home = ({ projects }) => {
 			<a id="writings" name="writings"></a>
 			<WritingCard />
 			<Contact />
+			<CreatedBy />
 			<FooterMobile />
 		</div>
 	);
