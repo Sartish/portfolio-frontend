@@ -17,6 +17,8 @@ import newtab from "../assets/newtab.svg";
 import heart from "../assets/heart.svg";
 import Experience from "../components/Experience"
 import HeaderDesktop from "../components/HeaderDesktop"
+import Form from "../components/Form"
+import FormVanilla from "../components/FormVanilla";
 
 /* import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/Globalstyles";

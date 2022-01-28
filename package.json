@@ -32,6 +32,7 @@
 		"react-animated-heart": "^0.0.7-alpha.1",
 		"react-animated-text": "^0.1.4",
 		"react-dom": "17.0.2",
+		"react-hook-form": "^7.25.1",
 		"react-icons": "^4.3.1",
 		"react-mt-svg-lines": "^0.9.1",
 		"react-polygon": "^0.2.0",
