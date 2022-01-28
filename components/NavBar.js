@@ -9,7 +9,7 @@ const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div>
-			<nav className="shadow-sm fixed lg:static w-full z-10 lg:z-0">
+			<nav className="fixed lg:static w-full z-10 lg:z-0">
 				<div className="w-full">
 					<div className="flex items-center h-20 w-full">
 						<div className="flex items-center  mx-10  justify-between w-full">

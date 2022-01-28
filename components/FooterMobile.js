@@ -14,7 +14,10 @@ const FooterMobile = () => {
 		<>
 			{isTabletOrMobile && (
 				<footer
-					className="shadow text-3xl text-white text-center
+					className="
+						shadow 
+						text-3xl  
+						text-center
 						fixed
 						inset-x-0
 						bottom-0
@@ -23,6 +26,7 @@ const FooterMobile = () => {
 						w-full
 						justify-center
 						bg-yellow
+						p-2
 						bg-opacity-80
 						items-center
 						">
