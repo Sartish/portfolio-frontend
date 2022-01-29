@@ -13,7 +13,7 @@ const HeaderDesktop = () => {
 
 	return (
 		<header className="w-full h-screen lg:h-screen  flex justify-evenly lg:justify-start items-center flex-col mb-[25px] lg:[mb-0px]">
-			<div className="flex justify-center items-center flex-col lg:flex-row md:flex-col w-[90%] mt-[-40px]">
+			<div className="flex justify-center items-center flex-col lg:flex-row md:flex-col w-[90%] lg:mt-[-20px] mt-[-40px}">
 				<div className="pl-10 pr-10 lg:p-0 flex justify-center items-center lg:w-[780px] md:w-[600px] w-[400px] z-0 lg:pt-10">
 					<Image src={flight} data-aos="fade-left" />
 				</div>
