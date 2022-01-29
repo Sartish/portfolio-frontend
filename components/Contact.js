@@ -1,10 +1,17 @@
 
 
 // setting states
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export const Contact = () => {
+
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
+
 	const [firstName, setFirstName] = useState();
 	const [lastName, setLastName] = useState();
 	const [email, setEmail] = useState();
@@ -24,11 +31,12 @@ export const Contact = () => {
 
 	return (
 		<div className="flex justify-center items-center flex-col mb-[60px]">
-			<div className="header-container">
+			<div data-aos="fade-up" className="header-container">
 				<h1>Contact me</h1>
 				<h2>I am always up for a chat</h2>
 			</div>
 			<form
+				data-aos="fade-up"
 				ref={form}
 				onSubmit={sendEmail}
 				className="w-[60%] mt-[40px]">

@@ -1,11 +1,19 @@
+import React, { useEffect } from "react";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Experience = () => {
+
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
+
+
 	return (
-		<div className="mt-20 lg:mt-40 lg:mb-40">
-			<div className="header-container pb-10">
+		<div className="mt-40 lg:mt-40 lg:mb-40">
+			<div data-aos="fade-up" className="header-container pb-10">
 				<h1>Experience</h1>
 				<h2>What has led me to this moment</h2>
 			</div>

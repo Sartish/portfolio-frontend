@@ -1,13 +1,18 @@
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import DevIcon, { iconList, RandomIcon } from "devicon-react-svg";
 import Head from 'next/head'
-import ReactIcon from "../assets/icons/ReactIcon"
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 console.log(`Here is a list of icon names used by this component: ${iconList}`);
 
 const Skills = () => {
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
 
 
 	return (
@@ -18,11 +23,11 @@ const Skills = () => {
 				<link rel="stylesheet" href="devicon.min.css" />
 			</Head>
 			<SkillsContainer>
-				<HeaderContainer>
+				<HeaderContainer data-aos="fade-up">
 					<h1>Skills & Tools</h1>
 					<h2>What I use to create</h2>
 				</HeaderContainer>
-				<IconWrapper className="grid grid-cols-3 md:grid-cols-4 items-center justify-items-center gap-12">
+				<IconWrapper data-aos="fade-up" className="grid grid-cols-3 md:grid-cols-4 items-center justify-items-center gap-12">
 					<StyledIcon>
 						<i className="devicon-nextjs-original"></i>
 						<IconText>Nextjs</IconText>
@@ -84,8 +89,8 @@ const Skills = () => {
 						<IconText>SASS</IconText>
 					</StyledIcon>
 				</IconWrapper>
-				<HeaderTwo>I also like...</HeaderTwo>
-				<More className="w-[90%] items-center justify-items-center p-20 grid grid-cols-2 md:grid-cols-4 content-center justify-center gap-10">
+				<HeaderTwo data-aos="fade-up">I also like...</HeaderTwo>
+				<More data-aos="fade-up" className="w-[90%] items-center justify-items-center p-20 grid grid-cols-2 md:grid-cols-4 content-center justify-center gap-10">
 					<p>sanity</p>
 					<p>shopify</p>
 					<p>UX/UI</p>

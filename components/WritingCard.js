@@ -1,16 +1,25 @@
+import React, { useEffect } from "react";
 import Image from "next/image"
 import articleonepic from "../assets/newsizearticle.png"
 import articletwopic from "../assets/newsizetwo.png"
 import articlethreepic from "../assets/newsizethree.png"
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const WritingCard = () => {
+
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
+
 
 	return (
 		<div className="flex justify-center items-center flex-col mt-20 lg:mt-40 lg:mb-20">
-			<div className="header-container">
+			<div data-aos="fade-up" className="header-container">
 				<h1>Writings</h1>
 				<h2>Some of my writings</h2>
 			</div>
-			<div className="md:w-[70%] w-[90%] pb-20 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5 items-center justify-items-center">
+			<div data-aos="fade-up" className="md:w-[70%] w-[90%] pb-20 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5 items-center justify-items-center">
 				<div className="rounded overflow-hidden shadow-lg max-w-[80%]">
 					<div className="max-w-screen-md">
 						<Image src={articleonepic} alt="Mountain" />

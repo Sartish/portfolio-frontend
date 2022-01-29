@@ -1,10 +1,11 @@
 import { sanityClient, urlFor } from "../sanity";
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Head from 'next/head'
 import WritingCard from "../components/WritingCard";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
@@ -20,12 +21,12 @@ import Contact from "../components/Contact"
 import CreatedBy from "../components/CreatedBy"
 
 
-/* import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "../components/Globalstyles";
-import { lightTheme, darkTheme } from "../components/Themes" */
-
 
 const Home = ({ projects }) => {
+
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
 
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 	const isDesktopOrLaptop = useMediaQuery({
@@ -51,7 +52,7 @@ const Home = ({ projects }) => {
 				<section>
 					<div className="project-header-container">
 						<a id="third-desktop" name="third-desktop">
-							<div className="header-container">
+							<div className="header-container" data-aos="fade-up">
 								<h1>featured projects</h1>
 								<h2>some stuff I have created</h2>
 							</div>
@@ -76,12 +77,13 @@ const Home = ({ projects }) => {
 													: "project-info-right-first-section"
 											}
 										>
-											<img
+											<img data-aos="fade-right"
 												className="project-image-desktop"
 												src={urlFor(project.image)}
 											/>
 										</a>
 										<div
+											data-aos="fade-right"
 											className={
 												project.id % 2 === 0
 													? "project-info-right-first-section"
@@ -125,12 +127,12 @@ const Home = ({ projects }) => {
 													: "project-info-right-second-section"
 											}
 										>
-											<img
+											<img data-aos="fade-left"
 												className="project-image-desktop"
 												src={urlFor(project.image)}
 											/>
 										</a>
-										<div
+										<div data-aos="fade-left"
 											className={
 												project.id % 2 === 0
 													? "project-info-right-second-section"
@@ -138,7 +140,7 @@ const Home = ({ projects }) => {
 											}
 										>
 											<div className="project-title">{project.title}</div>
-											<p className="project-text">
+											<p className="project-text" >
 												{project.text}
 												<div className="social-media-desktop">
 													<div className="social-media-icons-right">
@@ -180,14 +182,14 @@ const Home = ({ projects }) => {
 					{/* 					<GlobalStyles /> */}
 					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<a id="third-mobile" name="third-mobile"></a>
-					<div className="header-container pb-10 mt-0">
+					<div className="header-container pb-10 mt-0" data-aos="fade-up">
 						<h1>featured projects</h1>
 						<h2>some stuff I have created</h2>
 					</div>
 					{projects.map((project) => {
 						return (
 							<div key={project._id}>
-								<div className="project-container-mobile">
+								<div className="project-container-mobile" data-aos="fade-up">
 									<section className="project-section-mobile">
 										<img
 											className="w-[300px] md:w-[400px]"
@@ -230,7 +232,7 @@ const Home = ({ projects }) => {
 			)}
 			<a id="experience" name="experience"></a>
 			<Experience />
-			<a id="skills" name="skille"></a>
+			<a id="skills" name="skills"></a>
 			<Skills />
 			<a id="about" name="about"></a>
 			<AboutMe />
