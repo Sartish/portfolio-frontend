@@ -1,8 +1,8 @@
 
 const CreatedBy = () => {
 	return (
-		<div className="text-center p-20">
-			<h2>&#9400; 2022 Sara Carlstein</h2>
+		<div className="text-center p-20 ld:p-5">
+			<p>&#9400; 2022 Sara Carlstein</p>
 		</div>
 	)
 }

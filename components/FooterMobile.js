@@ -24,7 +24,7 @@ const FooterMobile = () => {
 						flex
 						flex-col
 						w-full
-						justify-center
+						justify-around
 						bg-yellow
 						p-2
 						bg-opacity-80

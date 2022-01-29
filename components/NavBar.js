@@ -79,10 +79,21 @@ const NavBar = () => {
 										spy={true}
 										smooth={true}
 										duration={500}
-										offset={-80}
+										offset={30}
 										className="hover:opacity-50"
 									>
 										Experience
+									</Link>
+									<Link
+										activeclassname="About"
+										to="experience"
+										spy={true}
+										smooth={true}
+										duration={500}
+										offset={-70}
+										className="hover:opacity-50"
+									>
+										Contact
 									</Link>
 
 								</div>
@@ -150,20 +161,9 @@ const NavBar = () => {
 						<div className="lg:hidden" id="mobile-menu">
 							<div
 								ref={ref}
-								className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
+								className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3 flex justify-center items center flex-col"
 							>
-								<Link
-									href="/services"
-									activeclassname="services"
-									to="home"
-									spy={true} smooth={true}
-									duration={500}
-									offset={-90}
-									className="hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
-									onClick={() => setIsOpen(!isOpen)}
-								>
-									Home
-								</Link>
+
 								<Link
 									href="/home"
 									activeclassname="home"
@@ -171,7 +171,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-100}
-									className="hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="text-center hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									About
@@ -182,8 +182,8 @@ const NavBar = () => {
 									to="skills"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-120}
-									className="hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									offset={-40}
+									className="text-center hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Skills
@@ -194,8 +194,8 @@ const NavBar = () => {
 									to="third-mobile"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-100}
-									className="hover:opacity-50 font-Poppins font-bold  uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									offset={-10}
+									className="text-center hover:opacity-50 font-Poppins font-bold  uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Projects
@@ -207,7 +207,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-90}
-									className="hover:opacity-50 font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="text-center hover:opacity-50 font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Writings
@@ -220,10 +220,24 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-90}
-									className="hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="text-center hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Experience
+								</Link>
+
+
+								<Link
+									href="/services"
+									activeclassname="services"
+									to="contact"
+									spy={true} smooth={true}
+									duration={500}
+									offset={-70}
+									className="text-center hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									onClick={() => setIsOpen(!isOpen)}
+								>
+									Contact
 								</Link>
 							</div>
 						</div>

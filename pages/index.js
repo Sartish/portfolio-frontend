@@ -5,16 +5,15 @@ import WritingCard from "../components/WritingCard";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
-import Header from "../components/Header";
+
 import AboutMe from "../components/AboutMe";
-import Plant from "../components/Plant";
 import Skills from "../components/Skills";
 import NavBar from "../components/NavBar"
 import StickyBar from "../components/StickyBar";
 import FooterMobile from "../components/FooterMobile"
 import github from "../assets/github.svg";
 import newtab from "../assets/newtab.svg";
-import heart from "../assets/heart.svg";
+
 import Experience from "../components/Experience"
 import HeaderDesktop from "../components/HeaderDesktop"
 import Contact from "../components/Contact"
@@ -27,18 +26,13 @@ import { lightTheme, darkTheme } from "../components/Themes" */
 
 
 const Home = ({ projects }) => {
-	const [isClick, setClick] = useState(false);
+
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
 	const isDesktopOrLaptop = useMediaQuery({
 		query: "(min-width:  1024px)",
 	});
 
 	console.log(projects);
-
-	const [theme, setTheme] = useState("light");
-	const themeToggler = () => {
-		theme === "light" ? setTheme("dark") : setTheme("light");
-	};
 
 	return (
 		<div className="w-screen">
@@ -55,9 +49,6 @@ const Home = ({ projects }) => {
 			<HeaderDesktop />
 			{isDesktopOrLaptop && (
 				<section>
-					{/* 				<ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> */}
-					{/* 					<GlobalStyles /> */}
-					{/* 				<button onClick={themeToggler}>Switch Theme</button> */}
 					<div className="project-header-container">
 						<a id="third-desktop" name="third-desktop">
 							<div className="header-container">
@@ -155,7 +146,7 @@ const Home = ({ projects }) => {
 															<Image className="github-icon" src={github} width={25}
 																height={30} />
 														</a>
-														<a className="link-new-link" href={project.linkcode}>
+														<a className="link-new-link" href={project.linkproject}>
 															<Image className="new-link-icon" src={newtab} width={25}
 																height={30} />
 														</a>
@@ -211,7 +202,7 @@ const Home = ({ projects }) => {
 														<Image className="github-icon" src={github} width={25}
 															height={30} />
 													</a>
-													<a className="link-new-link" href={project.linkcode}>
+													<a className="link-new-link" href={project.linkproject}>
 														<Image className="new-link-icon" src={newtab} width={25}
 															height={30} />
 													</a>
@@ -245,6 +236,7 @@ const Home = ({ projects }) => {
 			<AboutMe />
 			<a id="writings" name="writings"></a>
 			<WritingCard />
+			<a id="contact" name="contact"></a>
 			<Contact />
 			<CreatedBy />
 			<FooterMobile />

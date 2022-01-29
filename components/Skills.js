@@ -11,7 +11,7 @@ const Skills = () => {
 
 
 	return (
-		<div className="mt-20">
+		<div className="mt-20 lg:mt-40 lg:mb-40">
 			<Head>
 				<title>My page title</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -91,7 +91,7 @@ const Skills = () => {
 					<p>UX/UI</p>
 					<p>design</p>
 					<p>Tailwind</p>
-					<p>UX/UI</p>
+					<p>creating content</p>
 					<p>design</p>
 					<p>content layout</p>
 				</More>

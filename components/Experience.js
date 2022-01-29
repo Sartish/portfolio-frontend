@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const Experience = () => {
 	return (
-		<div className="mt-20">
+		<div className="mt-20 lg:mt-40 lg:mb-40">
 			<div className="header-container pb-10">
 				<h1>Experience</h1>
 				<h2>What has led me to this moment</h2>
