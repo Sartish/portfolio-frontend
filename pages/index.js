@@ -25,7 +25,7 @@ import CreatedBy from "../components/CreatedBy"
 const Home = ({ projects }) => {
 
 	useEffect(() => {
-		Aos.init({ duration: 1000 });
+		Aos.init({ duration: 500 });
 	}, []);
 
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1023px)" });
