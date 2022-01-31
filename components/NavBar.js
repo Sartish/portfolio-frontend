@@ -182,7 +182,7 @@ const NavBar = () => {
 									to="skills"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-40}
+									offset={-20}
 									className="text-center hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
@@ -194,7 +194,7 @@ const NavBar = () => {
 									to="third-mobile"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-10}
+									offset={-90}
 									className="text-center hover:opacity-50 font-Poppins font-bold  uppercase cursor-pointer hover:opacity-60 text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
@@ -206,7 +206,7 @@ const NavBar = () => {
 									to="writings"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-40}
+									offset={-10}
 									className="text-center hover:opacity-50 font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:opacity-60 text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
@@ -219,7 +219,7 @@ const NavBar = () => {
 									to="experience"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-90}
+									offset={-20}
 									className="text-center hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:opacity-60 text-black  block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
@@ -234,7 +234,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-70}
-									className="text-center hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:opacity-60 text-black block px-3 py-2 rounded-md text-base"
+									className="text-center font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:opacity-60 text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Contact

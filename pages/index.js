@@ -38,11 +38,14 @@ const Home = ({ projects }) => {
 	return (
 		<div className="w-screen">
 			<Head>
-				<title>My page title</title>
+				<title>Sara Carlstein</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"></link>
 				<link rel="preconnect" href="https://fonts.googleapis.com"></link>
 				<link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap" rel="stylesheet"></link>
+				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 			</Head>
 			<NavBar />
 			<StickyBar />

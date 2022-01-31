@@ -22,8 +22,7 @@ export const Contact = () => {
 				text: "Thank you, I will come back to you",
 				icon: "success",
 				button: "ok",
-				imageUrl: 'https://media.giphy.com/media/D28t0Rto3daKI/giphy.gif'
-			});
+			})
 		} else {
 			swal({
 				itle: "Sorry",

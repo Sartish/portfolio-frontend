@@ -12,7 +12,7 @@ const Experience = () => {
 
 
 	return (
-		<div className="mt-40 lg:mt-20 lg:mb-40">
+		<div className="mt-20 lg:mt-20 lg:mb-40">
 			<div data-aos="fade-up" className="header-container pb-10">
 				<h1>Experience</h1>
 				<h2>What have I done</h2>
