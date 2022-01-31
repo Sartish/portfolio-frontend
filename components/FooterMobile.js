@@ -24,13 +24,12 @@ const FooterMobile = () => {
 						flex
 						flex-col
 						w-full
-						justify-around
 						bg-yellow
 						p-2
 						bg-opacity-80
 						items-center
 						">
-					<div className="flex flex-row justify-around mb-0 w-1/2">
+					<div className="flex flex-row justify-evenly mb-0 w-full">
 						<div className="pr-4 pt-2">
 							<a href="https://codepen.io/sartish">
 								<Image src={codepen} />
