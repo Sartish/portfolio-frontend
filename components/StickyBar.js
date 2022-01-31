@@ -14,7 +14,7 @@ const StickyBar = () => {
 	return (
 
 		<>{isDesktopOrLaptop && (
-			<aside className="fixed w-full z-10 my-60">
+			<aside className="fixed w-full -z-50 my-60">
 				<div className="flex flex-row justify-between w-full">
 					<div classNameNme="flex flex-col w-full p-20">
 						<div className="p-5 cursor-pointer">

@@ -2,6 +2,7 @@
 
 // setting states
 import React, { useRef, useState, useEffect } from 'react';
+import swal from 'sweetalert';
 import emailjs from '@emailjs/browser';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -12,11 +13,13 @@ export const Contact = () => {
 		Aos.init({ duration: 1000 });
 	}, []);
 
-	const [firstName, setFirstName] = useState();
-	const [lastName, setLastName] = useState();
-	const [email, setEmail] = useState();
-	const [message, setMessage] = useState();
+	const [firstName, setFirstName] = useState("");
+	const [lastName, setLastName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
 	const form = useRef();
+
+	const inputMin = { minLength: 5 };
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -30,13 +33,12 @@ export const Contact = () => {
 	};
 
 	return (
-		<div className="flex justify-center items-center flex-col mb-[60px]">
+		<div className="flex justify-center items-center flex-col mb-[60px] z-30">
 			<div data-aos="fade-up" className="header-container">
 				<h1>Contact me</h1>
 				<h2>I am always up for a chat</h2>
 			</div>
 			<form
-				data-aos="fade-up"
 				ref={form}
 				onSubmit={sendEmail}
 				className="w-[60%] mt-[40px]">
@@ -46,6 +48,10 @@ export const Contact = () => {
 							First Name
 						</label>
 						<input
+							variant="outlined"
+							margin="normal"
+							required
+							fullWidth
 							name="user_first_name"
 							type="text"
 							value={firstName}
@@ -58,8 +64,13 @@ export const Contact = () => {
 							Last Name
 						</label>
 						<input
+							variant="outlined"
+							margin="normal"
+							required
+							fullWidth
 							name="user_last_name"
 							type="text"
+							autoFocus
 							value={lastName}
 							onChange={(e) => setLastName(e.target.value)}
 							className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -70,11 +81,15 @@ export const Contact = () => {
 					<div className="w-full px-3">
 						<label className="block lowercase font-Poppins font-semibold text-xs tracking-wide leading-relaxed mb-2">Email</label>
 						<input
-							type="email"
-							name="user_email"
+							variant="outlined"
+							margin="normal"
+							required
+							fullWidth
+							name="user_first_name"
+							type="text"
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
-							className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+							className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 						/>
 					</div>
 				</div>
@@ -83,10 +98,17 @@ export const Contact = () => {
 					<div className="w-full px-3">
 						<label className="block lowercase font-Poppins font-semibold text-xs tracking-wide leading-relaxed mb-2">Message</label>
 						<textarea
+							autoFocus
+							inputProps={inputMin}
+							variant="outlined"
+							margin="normal"
+							required
+							fullWidth
+							type="text"
 							name="message"
 							value={message}
 							onChange={(e) => setMessage(e.target.value)}
-							className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+							className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:bg-white focus:border-gray-500 h-48"
 						/>
 					</div>
 				</div>
