@@ -8,16 +8,37 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 export const Contact = () => {
-
-	useEffect(() => {
-		Aos.init({ duration: 1000 });
-	}, []);
-
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	const form = useRef();
+
+
+	const onFormSubmit = () => {
+		if (firstName.length > 0 && lastName.length > 0 && email.length > 0 && message.length > 0) {
+			swal({
+				title: "Success!",
+				text: "Thank you, I will come back to you",
+				icon: "success",
+				button: "ok",
+				imageUrl: 'https://media.giphy.com/media/D28t0Rto3daKI/giphy.gif'
+			});
+		} else {
+			swal({
+				itle: "Sorry",
+				text: "you are missing information",
+				icon: "error",
+				button: "ok",
+			});
+		}
+	};
+
+
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
+
 
 	const inputMin = { minLength: 5 };
 
@@ -39,13 +60,14 @@ export const Contact = () => {
 				<h2>I am always up for a chat</h2>
 			</div>
 			<form
+				data-aos="fade-up"
 				ref={form}
 				onSubmit={sendEmail}
 				className="w-[60%] mt-[40px]">
 				<div className="flex flex-wrap -mx-3 mb-6">
 					<div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
 						<label className="block lowercase font-Poppins font-semibold text-xs tracking-wide leading-relaxed mb-2">
-							First Name
+							First name
 						</label>
 						<input
 							variant="outlined"
@@ -61,7 +83,7 @@ export const Contact = () => {
 					</div>
 					<div className="w-full md:w-1/2 px-3">
 						<label className="block lowercase font-Poppins font-semibold text-xs tracking-wide leading-relaxed mb-2">
-							Last Name
+							Last name
 						</label>
 						<input
 							variant="outlined"
@@ -86,7 +108,7 @@ export const Contact = () => {
 							required
 							fullWidth
 							name="user_first_name"
-							type="text"
+							type="email"
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 							className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -113,6 +135,7 @@ export const Contact = () => {
 					</div>
 				</div>
 				<button
+					onClick={onFormSubmit}
 					type="submit"
 					value="Send"
 					className="

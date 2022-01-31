@@ -19,7 +19,7 @@ const WritingCard = () => {
 				<h1>Writings</h1>
 				<h2>Some of my writings</h2>
 			</div>
-			<div data-aos="fade-up" className="md:w-[70%] w-[90%] pb-20 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5 items-center justify-items-center">
+			<div data-aos="fade-up" className="md:w-[70%] w-[90%] pb-20 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5 items-center justify-items-center mt-10">
 				<div className="rounded overflow-hidden shadow-lg max-w-[80%]">
 					<div className="max-w-screen-md">
 						<Image src={articleonepic} alt="Mountain" />

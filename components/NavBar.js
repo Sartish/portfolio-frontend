@@ -86,7 +86,7 @@ const NavBar = () => {
 									</Link>
 									<Link
 										activeclassname="About"
-										to="experience"
+										to="contact"
 										spy={true}
 										smooth={true}
 										duration={500}
@@ -170,8 +170,8 @@ const NavBar = () => {
 									to="about"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-100}
-									className="text-center hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									offset={-20}
+									className="text-center hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									About
@@ -183,7 +183,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-40}
-									className="text-center hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="text-center hover:opacity-50 font-Poppins font-bold leading-12 tracking-wide uppercase cursor-pointer text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Skills
@@ -195,7 +195,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-10}
-									className="text-center hover:opacity-50 font-Poppins font-bold  uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="text-center hover:opacity-50 font-Poppins font-bold  uppercase cursor-pointer hover:opacity-60 text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Projects
@@ -206,8 +206,8 @@ const NavBar = () => {
 									to="writings"
 									spy={true} smooth={true}
 									duration={500}
-									offset={-90}
-									className="text-center hover:opacity-50 font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									offset={-40}
+									className="text-center hover:opacity-50 font-Poppins leading-12 tracking-wide font-bold uppercase cursor-pointer hover:opacity-60 text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Writings
@@ -220,7 +220,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-90}
-									className="text-center hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="text-center hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:opacity-60 text-black  block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Experience
@@ -234,7 +234,7 @@ const NavBar = () => {
 									spy={true} smooth={true}
 									duration={500}
 									offset={-70}
-									className="text-center hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:bg-green text-black hover:text-white block px-3 py-2 rounded-md text-base"
+									className="text-center hover:opacity-50 font-Poppins  leading-12 tracking-wide font-bold uppercase cursor-pointer hover:opacity-60 text-black block px-3 py-2 rounded-md text-base"
 									onClick={() => setIsOpen(!isOpen)}
 								>
 									Contact

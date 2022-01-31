@@ -13,7 +13,7 @@ const AboutMe = () => {
 
 	return (
 		<>
-			<section className="flex justify-center items-center flex-col mt-20 lg:mt-40 lg:mb-40">
+			<section className="flex justify-center items-center flex-col mt-20 lg:mt-20 lg:mb-40">
 				<div className="header-container" data-aos="fade-up">
 					<h1>About me</h1>
 					<h2>What I like doing all day</h2>

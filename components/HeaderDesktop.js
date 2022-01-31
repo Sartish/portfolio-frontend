@@ -7,7 +7,7 @@ import * as Scroll from 'react-scroll';
 const HeaderDesktop = () => {
 
 	return (
-		<header className="w-full h-screen lg:screen flex justify-evenly lg:justify-start items-center flex-col lg:[mb-0px]">
+		<header className="w-full h-screen lg:screen flex justify-evenly lg:justify-start items-center flex-col lg:[mb-40]">
 			<div className="flex justify-center items-center flex-col lg:flex-row md:flex-col w-[90%]">
 				<div className="pl-10 pr-10 lg:p-0 flex justify-center items-center lg:w-[780px] md:w-[600px] w-[400px] z-0 lg:pt-10">
 					<Image src={flight} alt="picture for header" />
