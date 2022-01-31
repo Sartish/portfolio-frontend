@@ -102,7 +102,7 @@ const Home = ({ projects }) => {
 															<Image className="github-icon" src={github} width={25}
 																height={30} />
 														</a>
-														<a className="link-new-link" href={project.linkcode}>
+														<a className="link-new-link" href={project.linkproject}>
 															<Image className="new-link-icon" src={newtab} width={25}
 																height={30} />
 														</a>
