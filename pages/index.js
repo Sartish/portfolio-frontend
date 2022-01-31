@@ -20,8 +20,6 @@ import HeaderDesktop from "../components/HeaderDesktop"
 import Contact from "../components/Contact"
 import CreatedBy from "../components/CreatedBy"
 
-
-
 const Home = ({ projects }) => {
 
 	useEffect(() => {
